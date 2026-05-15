@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JSFQc/qc+Ac=",
+  "dgSpecHash": "Zhu7uoTbrOw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
+  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pilli\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
     "C:\\Users\\pilli\\.nuget\\packages\\bcrypt.net-next\\4.1.0\\bcrypt.net-next.4.1.0.nupkg.sha512",

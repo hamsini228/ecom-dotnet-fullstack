@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj": {}
+    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj": {
+    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
+        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
         "projectName": "eCommerce.Application",
-        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
+        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj",
         "packagesPath": "C:\\Users\\pilli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\obj\\",
+        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,8 +32,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj": {
-                "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj"
+              "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj": {
+                "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj"
               }
             }
           }
@@ -91,14 +91,14 @@
         }
       }
     },
-    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj": {
+    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
         "projectName": "eCommerce.Domain",
-        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
+        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
         "packagesPath": "C:\\Users\\pilli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\obj\\",
+        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -156,14 +156,14 @@
         }
       }
     },
-    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj": {
+    "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
         "projectName": "eCommerce.Infrastructure",
-        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\pilli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -184,8 +184,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj": {
-                "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj"
+              "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj": {
+                "projectPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\eCommerce.Application.csproj"
               }
             }
           }

@@ -1,33 +1,33 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\",
+  "WorkspaceRootPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.api\\controllers\\v1\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.api\\controllers\\v1\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|solutionrelative:ecommerce.api\\controllers\\v1\\invoicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|solutionrelative:ecommerce.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.api\\controllers\\v1\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.api\\controllers\\v1\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFE6AB4-FD5D-4460-A487-95AD5C62E2E2}|eCommerce.Api\\eCommerce.Api.csproj|solutionrelative:ecommerce.api\\controllers\\v1\\cartscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.application\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.application\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|solutionrelative:ecommerce.application\\services\\cartservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.infrastructure\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.infrastructure\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\cartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.application\\contracts\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.application\\contracts\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8A642B39-FD7A-48DE-9DB2-01DA3AB04C62}|eCommerce.Application\\eCommerce.Application.csproj|solutionrelative:ecommerce.application\\contracts\\icartrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcorewebapi\\cleanarchitecture\\ecommerce.infrastructure\\infrastructureserviceregistrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\cleanarchitecture\\ecommerce.infrastructure\\infrastructureserviceregistrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D11EDD7-C8AF-4BF8-A2F7-4143C1BDAB93}|eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj|solutionrelative:ecommerce.infrastructure\\infrastructureserviceregistrations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,9 +48,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "InvoicesController.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
               "RelativeDocumentMoniker": "eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
               "RelativeToolTip": "eCommerce.Api\\Controllers\\v1\\InvoicesController.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAQwDMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -61,79 +61,73 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\appsettings.json",
               "RelativeDocumentMoniker": "eCommerce.Api\\appsettings.json",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\appsettings.json",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\appsettings.json",
               "RelativeToolTip": "eCommerce.Api\\appsettings.json",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-05-14T20:38:54.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T20:38:54.057Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CartsController.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\CartsController.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\CartsController.cs",
               "RelativeDocumentMoniker": "eCommerce.Api\\Controllers\\v1\\CartsController.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\CartsController.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\Controllers\\v1\\CartsController.cs",
               "RelativeToolTip": "eCommerce.Api\\Controllers\\v1\\CartsController.cs",
               "ViewState": "AgIAAJgAAAAAAAAAAAAkwMUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:11:17.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T20:11:17.943Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "InfrastructureServiceRegistrations.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
               "RelativeDocumentMoniker": "eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
               "RelativeToolTip": "eCommerce.Infrastructure\\InfrastructureServiceRegistrations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:09:59.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T20:09:59.036Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
               "Title": "ICartRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\Contracts\\ICartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\Contracts\\ICartRepository.cs",
               "RelativeDocumentMoniker": "eCommerce.Application\\Contracts\\ICartRepository.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\Contracts\\ICartRepository.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\Contracts\\ICartRepository.cs",
               "RelativeToolTip": "eCommerce.Application\\Contracts\\ICartRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T20:06:05.239Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T20:06:05.239Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "CartService.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\Services\\CartService.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\Services\\CartService.cs",
               "RelativeDocumentMoniker": "eCommerce.Application\\Services\\CartService.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Application\\Services\\CartService.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Application\\Services\\CartService.cs",
               "RelativeToolTip": "eCommerce.Application\\Services\\CartService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T19:51:31.008Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T19:51:31.008Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "CartRepository.cs",
-              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\CartRepository.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\CartRepository.cs",
               "RelativeDocumentMoniker": "eCommerce.Infrastructure\\CartRepository.cs",
-              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\CartRepository.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\CartRepository.cs",
               "RelativeToolTip": "eCommerce.Infrastructure\\CartRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-14T19:50:31.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-14T19:50:31.336Z"
             }
           ]
         },

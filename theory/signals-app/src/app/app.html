@@ -1,0 +1,164 @@
+<div class="container py-5">
+
+  <!-- Header -->
+  <div class="text-center mb-5">
+    <h1 class="fw-bold">Employee Management Dashboard</h1>
+    <p class="text-muted">
+      Angular Signals Demo using signal(), computed(), effect(), update(), and object models
+    </p>
+  </div>
+
+  <!-- Summary Cards -->
+  <div class="row g-4 mb-5">
+
+    <!-- Total Employees -->
+    <div class="col-md-4">
+      <div class="card shadow border-0 h-100 text-center p-4">
+        <h5>Total Employees</h5>
+        <h2 class="fw-bold">{{ employees().length }}</h2>
+      </div>
+    </div>
+
+    <!-- Active Employees -->
+    <div class="col-md-4">
+      <div class="card shadow border-0 h-100 text-center p-4">
+        <h5>Active Employees</h5>
+        <h2 class="fw-bold text-success">{{ activeEmployees().length }}</h2>
+      </div>
+    </div>
+
+    <!-- Total Payroll -->
+    <div class="col-md-4">
+      <div class="card shadow border-0 h-100 text-center p-4">
+        <h5>Total Payroll</h5>
+        <h2 class="fw-bold text-primary">
+          ₹{{ totalPayroll() | number }}
+        </h2>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Add Employee Button -->
+  <div class="text-end mb-4">
+    <button class="btn btn-dark px-4" (click)="addEmployee()">
+      Add Employee
+    </button>
+  </div>
+
+  <!-- Employee Table -->
+  <div class="card shadow border-0">
+    <div class="card-body">
+
+      <div class="table-responsive">
+        <table class="table align-middle table-hover">
+
+          <!-- Table Head -->
+          <thead class="table-dark">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Department</th>
+              <th>Salary</th>
+              <th>Status</th>
+              <th class="text-center">Actions</th>
+            </tr>
+          </thead>
+
+          <!-- Table Body -->
+          <tbody>
+
+            @for(emp of employees(); track emp.id) {
+              <tr>
+
+                <!-- ID -->
+                <td>{{ emp.id }}</td>
+
+                <!-- Name -->
+                <td class="fw-semibold">{{ emp.name }}</td>
+
+                <!-- Department -->
+                <td>
+                  <span class="badge bg-info text-dark">
+                    {{ emp.department }}
+                  </span>
+                </td>
+
+                <!-- Salary -->
+                <td>₹{{ emp.salary | number }}</td>
+
+                <!-- Status -->
+                <td>
+                  <span
+                    class="badge"
+                    [class.bg-success]="emp.isActive"
+                    [class.bg-secondary]="!emp.isActive"
+                  >
+                    {{ emp.isActive ? 'Active' : 'Inactive' }}
+                  </span>
+                </td>
+
+                <!-- Actions -->
+                <td class="text-center">
+
+                  <!-- Increase Salary -->
+                  <button
+                    class="btn btn-sm btn-outline-primary me-2"
+                    (click)="increaseSalary(emp.id)"
+                  >
+                    + Salary
+                  </button>
+
+                  <!-- Toggle Status -->
+                  <button
+                    class="btn btn-sm"
+                    [class.btn-outline-danger]="emp.isActive"
+                    [class.btn-outline-success]="!emp.isActive"
+                    (click)="toggleStatus(emp.id)"
+                  >
+                    {{ emp.isActive ? 'Deactivate' : 'Activate' }}
+                  </button>
+
+                </td>
+
+              </tr>
+            }
+
+          </tbody>
+
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- IT Department Employees -->
+  <div class="mt-5">
+    <h3 class="fw-bold mb-3">IT Department Employees (Computed Signal)</h3>
+
+    <div class="row g-3">
+
+      @for(emp of itEmployees(); track emp.id) {
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <div class="card-body">
+              <h5 class="fw-bold">{{ emp.name }}</h5>
+              <p class="mb-1">Department: {{ emp.department }}</p>
+              <p class="mb-1">Salary: ₹{{ emp.salary | number }}</p>
+
+              <span
+                class="badge"
+                [class.bg-success]="emp.isActive"
+                [class.bg-secondary]="!emp.isActive"
+              >
+                {{ emp.isActive ? 'Active' : 'Inactive' }}
+              </span>
+            </div>
+          </div>
+        </div>
+      }
+
+    </div>
+  </div>
+
+</div>

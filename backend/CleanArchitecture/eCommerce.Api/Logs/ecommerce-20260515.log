@@ -4733,3 +4733,48 @@ FROM [Products] AS [p]
 2026-05-15 02:32:04.312 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 31.6508ms
 2026-05-15 02:32:04.312 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
 2026-05-15 02:32:04.312 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 35.8881ms
+2026-05-15 11:41:08.880 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-15 11:41:10.048 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-15 11:41:10.062 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-15 11:41:10.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-15 11:41:10.285 +05:30 [INF] Hosting environment: Development
+2026-05-15 11:41:10.285 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ecom-dotnet-fullstack\backend\CleanArchitecture\eCommerce.Api
+2026-05-15 11:41:11.483 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-15 11:41:12.245 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 779.1946ms
+2026-05-15 11:41:12.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-15 11:41:12.313 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-15 11:41:12.326 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 14.0027ms
+2026-05-15 11:41:12.529 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 216.8681ms
+2026-05-15 11:41:12.624 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-15 11:41:12.813 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 190.638ms
+2026-05-15 11:41:40.681 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 60
+2026-05-15 11:41:40.752 +05:30 [INF] CORS policy execution failed.
+2026-05-15 11:41:40.753 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-15 11:41:40.982 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-15 11:41:41.032 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-15 11:41:41.491 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-15 11:41:41.528 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 491.9281ms
+2026-05-15 11:41:41.528 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-15 11:41:41.533 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 400 null application/problem+json; charset=utf-8 852.5671ms
+2026-05-15 11:42:03.573 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 61
+2026-05-15 11:42:03.597 +05:30 [INF] CORS policy execution failed.
+2026-05-15 11:42:03.600 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-15 11:42:03.612 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-15 11:42:03.618 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-15 11:42:10.153 +05:30 [INF] Executed DbCommand (167ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-15 11:42:11.038 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-15 11:42:11.046 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 7388.1158ms
+2026-05-15 11:42:11.047 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-15 11:42:11.062 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 200 null application/json; charset=utf-8 7493.2698ms

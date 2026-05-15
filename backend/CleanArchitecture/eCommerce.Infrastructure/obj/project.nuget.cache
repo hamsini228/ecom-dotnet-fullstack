@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bR1mJM1kNcM=",
+  "dgSpecHash": "9rH2uNvNALM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Infrastructure\\eCommerce.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pilli\\.nuget\\packages\\automapper\\16.1.1\\automapper.16.1.1.nupkg.sha512",
     "C:\\Users\\pilli\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",

@@ -1,0 +1,30 @@
+1) Subject ->> A special Observable that acts as both an Observable And an Observer 
+
+		-It ca multicast values to many subscribers simultaneously
+		subjectObject.subscribe(); subjectObject.next()here it  sends , subjectObject.complete()
+
+		- using instead of event Emitter or DOM events 
+
+		-use when ->Bridging imperative code into reactive streams. Cross-component communication. Manual trigger points.
+		
+		-subject as no past memory so if subscribers join after the will miss already emitted values
+		
+		-subject ->>fire and forget broadcaster, zero memory  , zero initial state
+
+
+2) BehaviorSubject ->>subject which need an initial value and always emits the current value to new subscribers the moment they subscribe not on the next . so this basically takes out subject's late subscriber loophole.  HAS .VALUE we can read the current state synchronously when we need to 
+
+
+
+
+
+3)ReplySubject ->> can hold past emission and emit it to new subscriber (buffer holds data) in long running streams can cause memory leaks, rather than manual store using this is easy
+
+
+
+4)mergeMap ->>used to convert a emission into anew observable and running them all concertently
+		-used to replace nested subscribes leak(call back hell) as they are hard to clean up parallel
+
+
+5)forkjoin ->>Waits for ALL provided observables to complete, then emits a single array (or object) of their last values 
+		->do all and then set if error total crash so secure it 

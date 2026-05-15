@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RPzAV1mQuL0=",
+  "dgSpecHash": "CVVTDgU5Vpo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
+  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Domain\\eCommerce.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

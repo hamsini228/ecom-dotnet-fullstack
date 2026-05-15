@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w8ZZmPu8YXo=",
+  "dgSpecHash": "IL80T6yK6OY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ASP.NETCoreWebAPI\\CleanArchitecture\\eCommerce.Api\\eCommerce.Api.csproj",
+  "projectFilePath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net&angular training\\ecom-dotnet-fullstack\\backend\\CleanArchitecture\\eCommerce.Api\\eCommerce.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pilli\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
     "C:\\Users\\pilli\\.nuget\\packages\\asp.versioning.http\\8.1.1\\asp.versioning.http.8.1.1.nupkg.sha512",
