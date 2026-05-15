@@ -1,0 +1,23 @@
+@eCommerce.Api_HostAddress = http://localhost:5169
+
+GET {{eCommerce.Api_HostAddress}}/routes
+### Get All Categories
+GET {{eCommerce.Api_HostAddress}}/api/v1/categories
+Accept: application/json
+
+### Get All Categories
+GET {{eCommerce.Api_HostAddress}}/api/v1/products
+Accept: application/json
+
+### Get All Categories
+GET {{eCommerce.Api_HostAddress}}/api/v1/Invoices
+Accept: application/json
+
+### Get All Categories
+GET {{eCommerce.Api_HostAddress}}/api/v1/carts
+Accept: application/json
+
+### Get All Categories
+GET {{eCommerce.Api_HostAddress}}/api/v1/roles
+Accept: application/json
+

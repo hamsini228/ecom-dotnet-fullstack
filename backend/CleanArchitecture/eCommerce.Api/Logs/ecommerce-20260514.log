@@ -1,0 +1,1329 @@
+2026-05-14 13:55:10.627 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 13:55:11.612 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 13:55:11.613 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 13:55:11.788 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 13:55:11.789 +05:30 [INF] Hosting environment: Development
+2026-05-14 13:55:11.790 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 13:55:44.057 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 13:55:46.706 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 13:55:46.737 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 13:55:46.801 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 2780.0332ms
+2026-05-14 13:55:46.892 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 154.4177ms
+2026-05-14 13:55:47.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 680.9333ms
+2026-05-14 13:55:48.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 13:55:48.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 429.939ms
+2026-05-14 14:03:24.265 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:03:24.265 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:03:24.671 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:24.675 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:24.685 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 438.7215ms
+2026-05-14 14:03:24.685 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 438.7215ms
+2026-05-14 14:03:24.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:03:24.730 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:25.342 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:25.464 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:25.488 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:25.671 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:03:26.689 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 14:03:31.797 +05:30 [INF] Executed DbCommand (87ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:03:32.167 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:03:32.291 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:03:32.293 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:32.297 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:32.297 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:32.298 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:32.299 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:03:32.311 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 6631.412ms
+2026-05-14 14:03:32.314 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:32.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 7638.045ms
+2026-05-14 14:03:32.464 +05:30 [INF] Executed DbCommand (23ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:03:32.469 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:03:32.473 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 173.3748ms
+2026-05-14 14:03:32.474 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:32.474 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 183.3605ms
+2026-05-14 14:03:40.199 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1002 - null null
+2026-05-14 14:03:40.210 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:40.210 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1002 - 204 null null 12.8248ms
+2026-05-14 14:03:40.216 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products/1002 - application/json null
+2026-05-14 14:03:40.217 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:40.226 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:40.226 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:40.227 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:03:40.283 +05:30 [INF] Route matched with {action = "GetProductDetails", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Product.ProductDto]] GetProductDetails(Int32) on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:03:40.764 +05:30 [INF] Executed DbCommand (66ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2026-05-14 14:03:40.777 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Product.ProductDto'.
+2026-05-14 14:03:40.778 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api) in 495.159ms
+2026-05-14 14:03:40.778 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:03:40.779 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products/1002 - 200 null application/json; charset=utf-8 563.661ms
+2026-05-14 14:03:47.054 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Carts - null null
+2026-05-14 14:03:47.059 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:47.060 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Carts - 204 null null 6.7349ms
+2026-05-14 14:03:47.066 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Carts - application/json 54
+2026-05-14 14:03:47.068 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:47.070 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:47.070 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:47.070 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api)'
+2026-05-14 14:03:47.088 +05:30 [INF] Route matched with {action = "CreateCart", controller = "Carts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Cart.CreateCartDto]] CreateCart(eCommerce.Application.DTOs.Cart.CreateCartDto) on controller eCommerce.Api.Controllers.v1.CartsController (eCommerce.Api).
+2026-05-14 14:03:47.520 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartDate], [CustomerId])
+OUTPUT INSERTED.[CartId]
+VALUES (@p0, @p1);
+2026-05-14 14:03:47.593 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'eCommerce.Application.DTOs.Cart.CartDto'.
+2026-05-14 14:03:47.672 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api) in 583.1238ms
+2026-05-14 14:03:47.672 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api)'
+2026-05-14 14:03:47.672 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Carts - 201 null application/json; charset=utf-8 606.2381ms
+2026-05-14 14:03:47.678 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - null null
+2026-05-14 14:03:47.679 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:47.679 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - 204 null null 2.4427ms
+2026-05-14 14:03:47.683 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/CartItems - application/json 58
+2026-05-14 14:03:47.683 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:47.684 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:47.684 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:47.684 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api)'
+2026-05-14 14:03:47.692 +05:30 [INF] Route matched with {action = "CreatecartItem", controller = "CartItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.CartItem.CreateCartItemDto]] CreatecartItem(eCommerce.Application.DTOs.CartItem.CreateCartItemDto) on controller eCommerce.Api.Controllers.v1.CartItemsController (eCommerce.Api).
+2026-05-14 14:03:47.775 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartItems] ([CartId], [ProductId], [Quantity], [Size])
+OUTPUT INSERTED.[CartItemId]
+VALUES (@p0, @p1, @p2, @p3);
+2026-05-14 14:03:47.786 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'eCommerce.Application.DTOs.CartItem.CartItemDto'.
+2026-05-14 14:03:47.792 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api) in 100.0608ms
+2026-05-14 14:03:47.792 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api)'
+2026-05-14 14:03:47.793 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/CartItems - 201 null application/json; charset=utf-8 110.0113ms
+2026-05-14 14:03:59.717 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:03:59.719 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:03:59.719 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:59.719 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:59.719 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 2.3417ms
+2026-05-14 14:03:59.720 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.3466ms
+2026-05-14 14:03:59.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:03:59.726 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:59.727 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:59.727 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:59.728 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:59.729 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:03:59.745 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:03:59.750 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:03:59.756 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 27.0941ms
+2026-05-14 14:03:59.756 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:59.757 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 32.728ms
+2026-05-14 14:03:59.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:03:59.762 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:03:59.764 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:03:59.764 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:03:59.764 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:59.764 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:03:59.771 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:03:59.775 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:03:59.781 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 16.1096ms
+2026-05-14 14:03:59.781 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:03:59.781 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 21.0517ms
+2026-05-14 14:04:22.603 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - null null
+2026-05-14 14:04:22.619 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:22.620 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - 204 null null 17.4635ms
+2026-05-14 14:04:22.624 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 58
+2026-05-14 14:04:22.625 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:22.626 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:22.626 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:22.626 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:04:22.638 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-14 14:04:23.348 +05:30 [INF] Executed DbCommand (62ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-14 14:04:24.167 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-14 14:04:24.172 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 1533.6041ms
+2026-05-14 14:04:24.172 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:04:24.172 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 200 null application/json; charset=utf-8 1549.3394ms
+2026-05-14 14:04:24.211 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - null null
+2026-05-14 14:04:24.214 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:24.215 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - 204 null null 5.2217ms
+2026-05-14 14:04:24.221 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/CartItems - application/json null
+2026-05-14 14:04:24.222 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:24.343 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api)'
+2026-05-14 14:04:24.352 +05:30 [INF] Route matched with {action = "GetAllcartItems", controller = "CartItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.CartItem.CartItemDto]]] GetAllcartItems() on controller eCommerce.Api.Controllers.v1.CartItemsController (eCommerce.Api).
+2026-05-14 14:04:24.377 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartItemId], [c].[CartId], [c].[ProductId], [c].[Quantity], [c].[Size]
+FROM [CartItems] AS [c]
+2026-05-14 14:04:24.393 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.CartItem.CartItemDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:04:24.394 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api) in 41.7677ms
+2026-05-14 14:04:24.394 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api)'
+2026-05-14 14:04:24.395 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/CartItems - 200 null application/json; charset=utf-8 174.7025ms
+2026-05-14 14:04:24.403 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1002 - null null
+2026-05-14 14:04:24.403 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:24.404 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1002 - 204 null null 1.6241ms
+2026-05-14 14:04:24.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products/1002 - application/json null
+2026-05-14 14:04:24.412 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:24.414 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:24.414 +05:30 [INF] Route matched with {action = "GetProductDetails", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Product.ProductDto]] GetProductDetails(Int32) on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:04:24.432 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2026-05-14 14:04:24.434 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Product.ProductDto'.
+2026-05-14 14:04:24.435 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api) in 20.876ms
+2026-05-14 14:04:24.435 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:24.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products/1002 - 200 null application/json; charset=utf-8 25.2105ms
+2026-05-14 14:04:32.735 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:04:32.736 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:04:32.738 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:32.739 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 3.8586ms
+2026-05-14 14:04:32.769 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:32.771 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 35.1738ms
+2026-05-14 14:04:32.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:04:32.779 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:32.779 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:32.780 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:32.780 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:04:32.780 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:04:32.792 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:04:32.794 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:04:32.797 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 17.4708ms
+2026-05-14 14:04:32.798 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:04:32.798 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 21.1808ms
+2026-05-14 14:04:32.802 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:04:32.803 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:32.803 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:32.804 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:32.804 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:04:32.804 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:04:32.814 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:04:32.817 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:04:32.821 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 16.8184ms
+2026-05-14 14:04:32.821 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:04:32.821 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 19.7611ms
+2026-05-14 14:04:36.261 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1006 - null null
+2026-05-14 14:04:36.263 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:36.263 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1006 - 204 null null 2.7089ms
+2026-05-14 14:04:36.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products/1006 - application/json null
+2026-05-14 14:04:36.269 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:36.269 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:36.270 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:36.270 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:36.270 +05:30 [INF] Route matched with {action = "GetProductDetails", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Product.ProductDto]] GetProductDetails(Int32) on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:04:36.284 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2026-05-14 14:04:36.285 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Product.ProductDto'.
+2026-05-14 14:04:36.286 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api) in 15.8406ms
+2026-05-14 14:04:36.286 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:36.286 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products/1006 - 200 null application/json; charset=utf-8 18.2795ms
+2026-05-14 14:04:37.879 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Carts - null null
+2026-05-14 14:04:37.880 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:37.880 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Carts - 204 null null 2.1032ms
+2026-05-14 14:04:37.883 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Carts - application/json 54
+2026-05-14 14:04:37.884 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:37.885 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:37.885 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:37.885 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api)'
+2026-05-14 14:04:37.885 +05:30 [INF] Route matched with {action = "CreateCart", controller = "Carts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Cart.CreateCartDto]] CreateCart(eCommerce.Application.DTOs.Cart.CreateCartDto) on controller eCommerce.Api.Controllers.v1.CartsController (eCommerce.Api).
+2026-05-14 14:04:37.907 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Carts] ([CartDate], [CustomerId])
+OUTPUT INSERTED.[CartId]
+VALUES (@p0, @p1);
+2026-05-14 14:04:37.909 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'eCommerce.Application.DTOs.Cart.CartDto'.
+2026-05-14 14:04:37.910 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api) in 25.0453ms
+2026-05-14 14:04:37.910 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartsController.CreateCart (eCommerce.Api)'
+2026-05-14 14:04:37.911 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Carts - 201 null application/json; charset=utf-8 27.9093ms
+2026-05-14 14:04:37.917 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - null null
+2026-05-14 14:04:37.918 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:37.918 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - 204 null null 1.2462ms
+2026-05-14 14:04:37.922 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/CartItems - application/json 58
+2026-05-14 14:04:37.922 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:37.924 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:37.924 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:37.924 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api)'
+2026-05-14 14:04:37.924 +05:30 [INF] Route matched with {action = "CreatecartItem", controller = "CartItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.CartItem.CreateCartItemDto]] CreatecartItem(eCommerce.Application.DTOs.CartItem.CreateCartItemDto) on controller eCommerce.Api.Controllers.v1.CartItemsController (eCommerce.Api).
+2026-05-14 14:04:37.945 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [CartItems] ([CartId], [ProductId], [Quantity], [Size])
+OUTPUT INSERTED.[CartItemId]
+VALUES (@p0, @p1, @p2, @p3);
+2026-05-14 14:04:37.946 +05:30 [INF] Executing CreatedAtActionResult, writing value of type 'eCommerce.Application.DTOs.CartItem.CartItemDto'.
+2026-05-14 14:04:37.946 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api) in 21.9131ms
+2026-05-14 14:04:37.947 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.CreatecartItem (eCommerce.Api)'
+2026-05-14 14:04:37.947 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/CartItems - 201 null application/json; charset=utf-8 25.6807ms
+2026-05-14 14:04:50.807 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - null null
+2026-05-14 14:04:50.808 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:50.809 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - 204 null null 1.5788ms
+2026-05-14 14:04:50.812 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 58
+2026-05-14 14:04:50.814 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:50.815 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:04:50.815 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:04:50.815 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:04:50.815 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-14 14:04:50.837 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-14 14:04:51.321 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-14 14:04:51.322 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 506.0254ms
+2026-05-14 14:04:51.322 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:04:51.322 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 200 null application/json; charset=utf-8 510.4795ms
+2026-05-14 14:04:51.343 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - null null
+2026-05-14 14:04:51.343 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:51.344 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/CartItems - 204 null null 2.3681ms
+2026-05-14 14:04:51.348 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/CartItems - application/json null
+2026-05-14 14:04:51.349 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:51.349 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api)'
+2026-05-14 14:04:51.350 +05:30 [INF] Route matched with {action = "GetAllcartItems", controller = "CartItems"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.CartItem.CartItemDto]]] GetAllcartItems() on controller eCommerce.Api.Controllers.v1.CartItemsController (eCommerce.Api).
+2026-05-14 14:04:51.361 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartItemId], [c].[CartId], [c].[ProductId], [c].[Quantity], [c].[Size]
+FROM [CartItems] AS [c]
+2026-05-14 14:04:51.363 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.CartItem.CartItemDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:04:51.363 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api) in 13.7437ms
+2026-05-14 14:04:51.364 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartItemsController.GetAllcartItems (eCommerce.Api)'
+2026-05-14 14:04:51.364 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/CartItems - 200 null application/json; charset=utf-8 16.5687ms
+2026-05-14 14:04:51.367 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1006 - null null
+2026-05-14 14:04:51.368 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:51.368 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products/1006 - 204 null null 1.5479ms
+2026-05-14 14:04:51.370 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products/1006 - application/json null
+2026-05-14 14:04:51.371 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:04:51.371 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:51.372 +05:30 [INF] Route matched with {action = "GetProductDetails", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Product.ProductDto]] GetProductDetails(Int32) on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:04:51.383 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+WHERE [p].[ProductId] = @__p_0
+2026-05-14 14:04:51.383 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Product.ProductDto'.
+2026-05-14 14:04:51.384 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api) in 12.1089ms
+2026-05-14 14:04:51.384 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetProductDetails (eCommerce.Api)'
+2026-05-14 14:04:51.384 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products/1006 - 200 null application/json; charset=utf-8 14.4152ms
+2026-05-14 14:05:16.892 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - null null
+2026-05-14 14:05:16.894 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:05:16.896 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - 204 null null 2.1102ms
+2026-05-14 14:05:16.904 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 58
+2026-05-14 14:05:16.910 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:05:16.911 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:05:16.911 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:05:16.911 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:05:16.911 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-14 14:05:16.932 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-14 14:05:17.237 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-14 14:05:17.237 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 325.8097ms
+2026-05-14 14:05:17.237 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:05:17.238 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 200 null application/json; charset=utf-8 333.4124ms
+2026-05-14 14:06:49.442 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:06:49.443 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:06:49.457 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:49.457 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:49.460 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 79.7973ms
+2026-05-14 14:06:49.460 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 79.8246ms
+2026-05-14 14:06:49.467 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:06:49.476 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:49.508 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:49.518 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:06:49.578 +05:30 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:06:49.586 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:06:49.599 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 80.7982ms
+2026-05-14 14:06:49.600 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:49.601 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 134.3662ms
+2026-05-14 14:06:49.612 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:06:49.618 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:49.621 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:49.621 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:06:49.633 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:06:49.639 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:06:49.645 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 23.382ms
+2026-05-14 14:06:49.647 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:49.651 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 36.3432ms
+2026-05-14 14:06:57.032 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:06:57.033 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:06:57.033 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:57.034 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 2.657ms
+2026-05-14 14:06:57.034 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:57.034 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.2444ms
+2026-05-14 14:06:57.040 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:06:57.042 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:57.045 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:57.046 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:06:57.063 +05:30 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:06:57.065 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:06:57.068 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 22.5497ms
+2026-05-14 14:06:57.069 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:57.069 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 29.6137ms
+2026-05-14 14:06:57.075 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:06:57.076 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:06:57.077 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:57.077 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:06:57.090 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:06:57.094 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:06:57.097 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 19.9689ms
+2026-05-14 14:06:57.097 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:06:57.097 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 22.9075ms
+2026-05-14 14:07:01.948 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:01.948 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:01.954 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:01.955 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:01.966 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:01.967 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:01.973 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 18.0344ms
+2026-05-14 14:07:01.974 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:01.974 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:01.974 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 26.3081ms
+2026-05-14 14:07:01.974 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:01.975 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:01.976 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:01.981 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:01.986 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:01.990 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 14.4952ms
+2026-05-14 14:07:01.990 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:01.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 16.691ms
+2026-05-14 14:07:07.492 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:07:07.492 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:07:07.493 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:07.493 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:07.493 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.7172ms
+2026-05-14 14:07:07.493 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.7444ms
+2026-05-14 14:07:07.506 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:07.507 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:07.508 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:07.508 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:07.532 +05:30 [INF] Executed DbCommand (19ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:07.534 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:07.543 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 34.3661ms
+2026-05-14 14:07:07.543 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:07.543 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 37.481ms
+2026-05-14 14:07:07.571 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:07.576 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:07.577 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:07.577 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:07.594 +05:30 [INF] Executed DbCommand (12ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:07.601 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:07.606 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 28.4139ms
+2026-05-14 14:07:07.606 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:07.606 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 35.3087ms
+2026-05-14 14:07:12.177 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:12.178 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:12.191 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:12.195 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:12.196 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:12.196 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:12.211 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:12.212 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:12.220 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 24.3289ms
+2026-05-14 14:07:12.220 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:12.221 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 45.0096ms
+2026-05-14 14:07:12.224 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:12.224 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:12.225 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:12.225 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:12.226 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:12.226 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:12.232 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:12.237 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:12.240 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 14.5154ms
+2026-05-14 14:07:12.241 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:12.241 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 17.9343ms
+2026-05-14 14:07:14.845 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:07:14.847 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:14.847 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 2.6189ms
+2026-05-14 14:07:14.857 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:14.860 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:14.864 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:14.865 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:14.865 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:14.866 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:14.884 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:14.888 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:14.892 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 25.4657ms
+2026-05-14 14:07:14.892 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:14.893 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 35.9098ms
+2026-05-14 14:07:14.895 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:14.896 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:14.897 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:14.897 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:14.897 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:14.898 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:14.931 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:14.937 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:14.940 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 41.9932ms
+2026-05-14 14:07:14.940 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:14.941 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 45.8744ms
+2026-05-14 14:07:18.339 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:18.340 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:18.343 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:18.344 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:18.345 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:18.347 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:18.374 +05:30 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:18.377 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:18.380 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 33.4904ms
+2026-05-14 14:07:18.381 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:18.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 42.4459ms
+2026-05-14 14:07:18.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:18.384 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:18.385 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:18.387 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:18.387 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:18.387 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:18.396 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:18.398 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:18.401 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 14.0051ms
+2026-05-14 14:07:18.402 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:18.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 19.841ms
+2026-05-14 14:07:40.639 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:07:40.639 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:07:40.730 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:40.730 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:40.734 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 97.822ms
+2026-05-14 14:07:40.734 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 97.8903ms
+2026-05-14 14:07:40.764 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:40.767 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:40.777 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:40.783 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:40.783 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:40.788 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:40.948 +05:30 [INF] Executed DbCommand (134ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:40.956 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:40.964 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 175.678ms
+2026-05-14 14:07:40.964 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:40.965 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 202.2256ms
+2026-05-14 14:07:40.973 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:07:40.974 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:40.975 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:40.975 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:40.975 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:40.975 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:07:40.989 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:07:40.990 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:40.993 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 17.5077ms
+2026-05-14 14:07:40.993 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:07:40.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 21.0771ms
+2026-05-14 14:07:56.347 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - null null
+2026-05-14 14:07:56.355 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:56.356 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Security/Login - 204 null null 10.4794ms
+2026-05-14 14:07:56.362 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Security/Login - application/json 52
+2026-05-14 14:07:56.365 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:56.366 +05:30 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenMalformedException: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-14 14:07:56.366 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14100: JWT is not well formed, there are no dots (.).
+The token needs to be in JWS or JWE Compact Serialization Format. (JWS): 'EncodedHeader.EncodedPayload.EncodedSignature'. (JWE): 'EncodedProtectedHeader.EncodedEncryptedKey.EncodedInitializationVector.EncodedCiphertext.EncodedAuthenticationTag'.
+2026-05-14 14:07:56.366 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:07:56.368 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-14 14:07:56.548 +05:30 [INF] Executed DbCommand (103ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-14 14:07:56.902 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-14 14:07:56.903 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 535.3699ms
+2026-05-14 14:07:56.903 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-14 14:07:56.904 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Security/Login - 200 null application/json; charset=utf-8 542.4942ms
+2026-05-14 14:07:56.944 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Categories?t=1778747876925 - null null
+2026-05-14 14:07:56.985 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:56.986 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Categories?t=1778747876925 - 204 null null 41.4772ms
+2026-05-14 14:07:56.988 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories?t=1778747876925 - application/json null
+2026-05-14 14:07:56.989 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:07:57.047 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-14 14:07:57.095 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-14 14:07:57.111 +05:30 [INF] Get all categories
+2026-05-14 14:07:57.219 +05:30 [INF] Executed DbCommand (25ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2026-05-14 14:07:57.277 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:07:57.299 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 203.8069ms
+2026-05-14 14:07:57.299 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-14 14:07:57.300 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories?t=1778747876925 - 200 null application/json; charset=utf-8 312.28ms
+2026-05-14 14:08:01.817 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:08:01.818 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:08:01.819 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:01.819 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:01.819 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.3352ms
+2026-05-14 14:08:01.819 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 2.4097ms
+2026-05-14 14:08:01.827 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:01.828 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:01.829 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:01.830 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:01.839 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:01.841 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:01.844 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 13.8638ms
+2026-05-14 14:08:01.844 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:01.844 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 16.8168ms
+2026-05-14 14:08:01.846 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:01.846 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:01.847 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:01.847 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:01.855 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:01.860 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:01.863 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 15.7851ms
+2026-05-14 14:08:01.863 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:01.864 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 18.5304ms
+2026-05-14 14:08:05.844 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:05.844 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:05.845 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:05.845 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:05.854 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:05.855 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:05.859 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 13.4418ms
+2026-05-14 14:08:05.859 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:05.859 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 16.9058ms
+2026-05-14 14:08:05.867 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:05.867 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:05.868 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:05.868 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:05.872 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:05.876 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:05.879 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 10.9077ms
+2026-05-14 14:08:05.879 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:05.880 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 13.6607ms
+2026-05-14 14:08:10.947 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/Categories?t=1778747890940 - null null
+2026-05-14 14:08:10.953 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:10.954 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/Categories?t=1778747890940 - 204 null null 6.9762ms
+2026-05-14 14:08:10.960 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories?t=1778747890940 - application/json null
+2026-05-14 14:08:10.960 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:10.968 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-14 14:08:10.969 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-14 14:08:10.971 +05:30 [INF] Get all categories
+2026-05-14 14:08:10.971 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:10.971 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 2.5376ms
+2026-05-14 14:08:10.972 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-14 14:08:10.972 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories?t=1778747890940 - 200 null application/json; charset=utf-8 12.0236ms
+2026-05-14 14:08:12.256 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:08:12.256 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:12.256 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 0.8532ms
+2026-05-14 14:08:12.257 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:08:12.258 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:12.258 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.3715ms
+2026-05-14 14:08:12.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:12.262 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:12.262 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:12.263 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:12.276 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:12.277 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:12.280 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 17.1744ms
+2026-05-14 14:08:12.280 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:12.280 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 18.9562ms
+2026-05-14 14:08:12.287 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:08:12.289 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:08:12.290 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:12.290 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:08:12.301 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:08:12.308 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:08:12.312 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 21.9143ms
+2026-05-14 14:08:12.312 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:08:12.313 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 25.7998ms
+2026-05-14 14:11:34.573 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:11:34.573 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7274/api/v1/products - null null
+2026-05-14 14:11:34.574 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:11:34.574 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:11:34.574 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.1745ms
+2026-05-14 14:11:34.574 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7274/api/v1/products - 204 null null 1.1764ms
+2026-05-14 14:11:34.622 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:11:34.622 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:11:34.635 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:11:34.636 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:11:36.447 +05:30 [INF] Executed DbCommand (1,788ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:11:36.449 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:11:36.465 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 1829.1708ms
+2026-05-14 14:11:36.465 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:11:36.466 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 1844.1229ms
+2026-05-14 14:11:36.479 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/products - application/json null
+2026-05-14 14:11:36.479 +05:30 [INF] CORS policy execution successful.
+2026-05-14 14:11:36.480 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:11:36.480 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-14 14:11:36.531 +05:30 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-14 14:11:36.532 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.ProductDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 14:11:36.541 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 60.8924ms
+2026-05-14 14:11:36.541 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-14 14:11:36.542 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/products - 200 null application/json; charset=utf-8 63.0266ms
+2026-05-14 14:16:28.897 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 14:16:28.968 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 80.2491ms
+2026-05-14 14:16:29.097 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 14:16:29.914 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 815.5095ms
+2026-05-14 22:37:31.676 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 22:37:32.887 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 22:37:32.888 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 22:37:33.194 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 22:37:33.195 +05:30 [INF] Hosting environment: Development
+2026-05-14 22:37:33.195 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 22:37:34.774 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 22:37:35.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 586.4677ms
+2026-05-14 22:37:35.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 22:37:35.448 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 22:37:35.459 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 11.3214ms
+2026-05-14 22:37:35.566 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 118.9885ms
+2026-05-14 22:37:35.783 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 22:37:35.952 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 169.4274ms
+2026-05-14 22:42:46.027 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 22:42:46.906 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 22:42:46.907 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 22:42:47.056 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 22:42:47.057 +05:30 [INF] Hosting environment: Development
+2026-05-14 22:42:47.057 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 22:42:47.965 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 22:42:48.428 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 482.241ms
+2026-05-14 22:42:48.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 22:42:48.446 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 22:42:48.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 11.9301ms
+2026-05-14 22:42:48.534 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.1394ms
+2026-05-14 22:42:48.586 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 22:42:48.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 98.0039ms
+2026-05-14 22:47:48.304 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 22:47:49.135 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 22:47:49.136 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 22:47:49.283 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 22:47:49.283 +05:30 [INF] Hosting environment: Development
+2026-05-14 22:47:49.283 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 22:47:50.149 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 22:47:50.675 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 547.1911ms
+2026-05-14 22:47:50.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 22:47:50.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 22:47:50.714 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 14.4892ms
+2026-05-14 22:47:50.843 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 143.639ms
+2026-05-14 22:47:50.916 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 22:47:51.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 205.3545ms
+2026-05-14 23:02:32.858 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:02:33.712 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:02:33.713 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:02:34.036 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:02:34.037 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:02:34.037 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:02:34.702 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:02:35.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 727.3975ms
+2026-05-14 23:02:35.511 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:02:35.512 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:02:35.532 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 23.2365ms
+2026-05-14 23:02:35.652 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 140.2459ms
+2026-05-14 23:02:35.785 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:02:35.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 192.866ms
+2026-05-14 23:02:50.399 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:02:50.773 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:02:50.809 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:02:51.286 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 23:02:53.485 +05:30 [ERR] Failed executing DbCommand (117ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:02:53.544 +05:30 [ERR] An exception occurred while iterating over the results of a query for context type 'eCommerce.Infrastructure.eCommerceDbContext'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:424e3a61-63d5-44eb-ad55-841fdabeae30
+Error Number:207,State:1,Class:16
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+ClientConnectionId:424e3a61-63d5-44eb-ad55-841fdabeae30
+Error Number:207,State:1,Class:16
+2026-05-14 23:02:53.827 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 3010.8956ms
+2026-05-14 23:02:53.829 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:02:53.838 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at eCommerce.Infrastructure.CommonRepository`1.GetAllAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Infrastructure\CommonRepository.cs:line 16
+   at eCommerce.Application.Services.CustomerService.GetCustomersAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\Services\CustomerService.cs:line 17
+   at eCommerce.Api.Controllers.v1.CustomersController.GetallAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api\Controllers\v1\CustomersController.cs:line 26
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:424e3a61-63d5-44eb-ad55-841fdabeae30
+Error Number:207,State:1,Class:16
+2026-05-14 23:02:53.900 +05:30 [ERR] Exception occurred: Invalid column name 'UserId'.
+Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'UserId'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at eCommerce.Infrastructure.CommonRepository`1.GetAllAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Infrastructure\CommonRepository.cs:line 16
+   at eCommerce.Application.Services.CustomerService.GetCustomersAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\Services\CustomerService.cs:line 17
+   at eCommerce.Api.Controllers.v1.CustomersController.GetallAsync() in C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api\Controllers\v1\CustomersController.cs:line 26
+   at lambda_method8(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:424e3a61-63d5-44eb-ad55-841fdabeae30
+Error Number:207,State:1,Class:16
+2026-05-14 23:02:53.928 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 500 null application/json; charset=utf-8 3530.9248ms
+2026-05-14 23:07:26.505 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:07:27.536 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:07:27.537 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:07:27.745 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:07:27.746 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:07:27.746 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:07:28.725 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:07:29.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 571.3937ms
+2026-05-14 23:07:29.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:07:29.289 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:07:29.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 13.9491ms
+2026-05-14 23:07:29.409 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 119.8152ms
+2026-05-14 23:07:29.466 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:07:29.614 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 149.0785ms
+2026-05-14 23:08:08.308 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:08:08.559 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:08:08.630 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:08:09.259 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 23:08:11.102 +05:30 [INF] Executed DbCommand (49ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:08:11.137 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-14 23:08:11.142 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 2505.9909ms
+2026-05-14 23:08:11.142 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:08:11.158 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 204 null null 2850.6156ms
+2026-05-14 23:08:52.356 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - application/json 77
+2026-05-14 23:08:52.389 +05:30 [INF] CORS policy execution failed.
+2026-05-14 23:08:52.391 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-14 23:08:52.396 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:08:52.424 +05:30 [INF] Route matched with {action = "CreateUserWithRole", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateUserWithRole(eCommerce.Application.DTOs.User.CreateUserDto, Int32) on controller eCommerce.Api.Controllers.v1.UsersController (eCommerce.Api).
+2026-05-14 23:08:52.954 +05:30 [INF] Executed DbCommand (35ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Description], [r].[RoleName]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__p_0
+2026-05-14 23:08:53.536 +05:30 [INF] Executed DbCommand (13ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1);
+2026-05-14 23:08:53.583 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RoleUser] ([RolesRoleId], [UsersUserId])
+VALUES (@p2, @p3);
+2026-05-14 23:08:53.662 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 200), @p1='?' (Size = 25), @p2='?' (Size = 50), @p3='?' (Size = 100), @p4='?' (Size = 20), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [City], [ContactName], [Email], [Phone], [UserId], [Zipcode])
+OUTPUT INSERTED.[CustomerId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-05-14 23:08:53.675 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-14 23:08:53.679 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api) in 1255.2702ms
+2026-05-14 23:08:53.679 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:08:53.680 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - 200 null application/json; charset=utf-8 1325.1324ms
+2026-05-14 23:09:04.187 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:09:04.190 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:09:04.191 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:09:04.207 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:09:04.222 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Customer.CustomerDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 23:09:04.228 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 36.8597ms
+2026-05-14 23:09:04.228 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:09:04.228 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 200 null application/json; charset=utf-8 42.3465ms
+2026-05-14 23:10:32.266 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:10:32.294 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 28.3727ms
+2026-05-14 23:10:32.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:10:32.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:10:32.381 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 2.5846ms
+2026-05-14 23:10:32.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 26.1919ms
+2026-05-14 23:10:32.447 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:10:32.523 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 77.3787ms
+2026-05-14 23:10:41.733 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:10:41.738 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:10:41.758 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:10:41.780 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:10:41.784 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Customer.CustomerDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 23:10:41.789 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 30.4421ms
+2026-05-14 23:10:41.789 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:10:41.790 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 200 null application/json; charset=utf-8 57.3091ms
+2026-05-14 23:12:31.711 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:12:32.600 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:12:32.603 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:12:32.890 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:12:32.891 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:12:32.891 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:12:33.614 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:12:34.334 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 755.7817ms
+2026-05-14 23:12:34.341 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:12:34.350 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:12:34.361 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 20.3607ms
+2026-05-14 23:12:34.453 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 104.4723ms
+2026-05-14 23:12:34.529 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:12:34.695 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 167.3492ms
+2026-05-14 23:12:45.788 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:12:45.958 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:12:45.991 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:12:46.463 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 23:12:48.316 +05:30 [INF] Executed DbCommand (78ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:12:48.475 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Customer.CustomerDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 23:12:48.508 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 2502.5157ms
+2026-05-14 23:12:48.509 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:12:48.527 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 200 null application/json; charset=utf-8 2739.8186ms
+2026-05-14 23:15:38.501 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:15:39.553 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:15:39.555 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:15:39.908 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:15:39.909 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:15:39.909 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:15:41.569 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:15:42.423 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 882.3787ms
+2026-05-14 23:15:42.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:15:42.523 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:15:42.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 22.344ms
+2026-05-14 23:15:42.696 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 173.6254ms
+2026-05-14 23:15:43.186 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:15:43.495 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 318.2611ms
+2026-05-14 23:16:18.723 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=1 - application/json 61
+2026-05-14 23:16:18.802 +05:30 [INF] CORS policy execution failed.
+2026-05-14 23:16:18.802 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-14 23:16:18.953 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:16:19.031 +05:30 [INF] Route matched with {action = "CreateUserWithRole", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateUserWithRole(eCommerce.Application.DTOs.User.CreateUserDto, Int32) on controller eCommerce.Api.Controllers.v1.UsersController (eCommerce.Api).
+2026-05-14 23:16:19.640 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 23:16:21.771 +05:30 [INF] Executed DbCommand (157ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Description], [r].[RoleName]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__p_0
+2026-05-14 23:16:22.471 +05:30 [INF] Executed DbCommand (27ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1);
+2026-05-14 23:16:22.506 +05:30 [INF] Executed DbCommand (11ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RoleUser] ([RolesRoleId], [UsersUserId])
+VALUES (@p2, @p3);
+2026-05-14 23:16:22.568 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (Size = 200), @p1='?' (Size = 25), @p2='?' (Size = 50), @p3='?' (Size = 100), @p4='?' (Size = 20), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [City], [ContactName], [Email], [Phone], [UserId], [Zipcode])
+OUTPUT INSERTED.[CustomerId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-05-14 23:16:22.581 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-14 23:16:22.592 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api) in 3554.3194ms
+2026-05-14 23:16:22.593 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:16:22.633 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=1 - 200 null application/json; charset=utf-8 3911.4082ms
+2026-05-14 23:16:35.395 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:16:35.401 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:16:35.415 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:16:35.521 +05:30 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:16:35.553 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Customer.CustomerDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 23:16:35.560 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 145.3073ms
+2026-05-14 23:16:35.560 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:16:35.561 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 200 null application/json; charset=utf-8 166.7133ms
+2026-05-14 23:18:14.624 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - application/json 67
+2026-05-14 23:18:14.655 +05:30 [INF] CORS policy execution failed.
+2026-05-14 23:18:14.656 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-14 23:18:14.667 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:18:14.671 +05:30 [INF] Route matched with {action = "CreateUserWithRole", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateUserWithRole(eCommerce.Application.DTOs.User.CreateUserDto, Int32) on controller eCommerce.Api.Controllers.v1.UsersController (eCommerce.Api).
+2026-05-14 23:18:14.762 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Description], [r].[RoleName]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__p_0
+2026-05-14 23:18:15.199 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1);
+2026-05-14 23:18:15.206 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RoleUser] ([RolesRoleId], [UsersUserId])
+VALUES (@p2, @p3);
+2026-05-14 23:18:15.220 +05:30 [INF] Executed DbCommand (8ms) [Parameters=[@p0='?' (Size = 200), @p1='?' (Size = 25), @p2='?' (Size = 50), @p3='?' (Size = 100), @p4='?' (Size = 20), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customers] ([Address], [City], [ContactName], [Email], [Phone], [UserId], [Zipcode])
+OUTPUT INSERTED.[CustomerId]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2026-05-14 23:18:15.221 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-14 23:18:15.223 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api) in 552.1806ms
+2026-05-14 23:18:15.223 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-14 23:18:15.225 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - 200 null application/json; charset=utf-8 664.321ms
+2026-05-14 23:18:22.932 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:18:22.936 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:18:22.937 +05:30 [INF] Route matched with {action = "Getall", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Customer.CustomerDto]]] GetallAsync() on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:18:22.955 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:18:22.956 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Customer.CustomerDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-14 23:18:22.957 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api) in 20.1012ms
+2026-05-14 23:18:22.957 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetallAsync (eCommerce.Api)'
+2026-05-14 23:18:22.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 200 null application/json; charset=utf-8 31.9374ms
+2026-05-14 23:20:04.536 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:20:05.398 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:20:05.399 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:20:05.684 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:20:05.684 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:20:05.685 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:20:06.247 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:20:06.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:20:06.672 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:20:06.672 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 441.6712ms
+2026-05-14 23:20:06.684 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 12.4031ms
+2026-05-14 23:20:06.740 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.2581ms
+2026-05-14 23:20:06.786 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:20:06.905 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.8033ms
+2026-05-14 23:20:32.368 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:20:33.306 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:20:33.307 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:20:33.672 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:20:33.673 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:20:33.673 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:20:33.998 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:20:34.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:20:34.581 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:20:34.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 612.7972ms
+2026-05-14 23:20:34.599 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 17.4131ms
+2026-05-14 23:20:34.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 101.0525ms
+2026-05-14 23:20:34.734 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:20:34.877 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 143.3303ms
+2026-05-14 23:21:12.095 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers - null null
+2026-05-14 23:21:12.349 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-14 23:21:12.372 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-14 23:21:12.372 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers - 401 null application/json; charset=utf-8 282.335ms
+2026-05-14 23:32:24.578 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:32:25.622 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:32:25.624 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:32:25.916 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:32:25.918 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:32:25.919 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:32:27.573 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:32:28.271 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 737.8127ms
+2026-05-14 23:32:28.380 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:32:28.419 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:32:28.439 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 59.0303ms
+2026-05-14 23:32:28.580 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 161.7932ms
+2026-05-14 23:32:28.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:32:28.900 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 147.7523ms
+2026-05-14 23:32:37.760 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Customers/user/1 - null null
+2026-05-14 23:32:37.972 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetByUserId (eCommerce.Api)'
+2026-05-14 23:32:38.039 +05:30 [INF] Route matched with {action = "GetByUserId", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.DTOs.Customer.CustomerDto]] GetByUserId(Int32) on controller eCommerce.Api.Controllers.v1.CustomersController (eCommerce.Api).
+2026-05-14 23:32:38.556 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-14 23:32:40.660 +05:30 [INF] Executed DbCommand (108ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerId], [c].[Address], [c].[City], [c].[ContactName], [c].[Email], [c].[Phone], [c].[UserId], [c].[Zipcode]
+FROM [Customers] AS [c]
+2026-05-14 23:32:40.824 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.DTOs.Customer.CustomerDto'.
+2026-05-14 23:32:40.838 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CustomersController.GetByUserId (eCommerce.Api) in 2793.2852ms
+2026-05-14 23:32:40.839 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CustomersController.GetByUserId (eCommerce.Api)'
+2026-05-14 23:32:40.848 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Customers/user/1 - 200 null application/json; charset=utf-8 3088.2782ms
+2026-05-14 23:39:11.597 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-14 23:39:12.837 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-14 23:39:12.839 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-14 23:39:13.184 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-14 23:39:13.185 +05:30 [INF] Hosting environment: Development
+2026-05-14 23:39:13.185 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-14 23:39:15.152 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-14 23:39:16.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 1029.4757ms
+2026-05-14 23:39:16.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-14 23:39:16.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-14 23:39:16.236 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 35.0343ms
+2026-05-14 23:39:16.341 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 148.7532ms
+2026-05-14 23:39:16.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-14 23:39:16.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 179.0758ms

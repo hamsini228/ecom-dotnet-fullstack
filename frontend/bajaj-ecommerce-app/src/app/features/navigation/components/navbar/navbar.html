@@ -1,0 +1,77 @@
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+    <div class="container">
+      <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="router-link-active"
+        >Fashion Store
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarContent"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+        <ul class="navbar-nav flex-grow-1">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              [routerLink]="['/home']"
+              routerLinkActive="router-link-active"
+            >
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              [routerLink]="['/products']"
+              routerLinkActive="router-link-active"
+            >
+              Products
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              [routerLink]="['/categories']"
+              routerLinkActive="router-link-active"
+            >
+              Categories
+            </a>
+          </li>
+          
+
+          <li class="nav-item">
+            <a class="nav-link text-dark" [routerLink]="['/cart']" routerLinkActive="active">
+              Cart
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center gap-3">
+          <button class="btn btn-outline-dark" [routerLink]="['/login']">
+            @if (isLoggedIn() === false) {
+              <a class="nav-link nav-item" [routerLink]="['/login']" routerLinkActive="active"
+                >Login</a
+              >
+            }
+            @if (isLoggedIn() === true) {
+              <a
+                class="nav-link nav-item"
+                (click)="logout()"
+                [routerLink]="['/home']"
+                routerLinkActive="active"
+                >Logout</a
+              >
+            }
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

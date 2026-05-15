@@ -1,0 +1,567 @@
+2026-05-04 15:12:16.701 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 15:12:16.749 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 15:12:16.909 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 15:12:16.910 +05:30 [INF] Hosting environment: Development
+2026-05-04 15:12:16.910 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 15:12:19.099 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 15:12:19.898 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 828.5512ms
+2026-05-04 15:12:20.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 15:12:20.058 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 15:12:20.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 23.0289ms
+2026-05-04 15:12:20.218 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 162.0653ms
+2026-05-04 15:12:20.298 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 15:12:20.463 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 165.6751ms
+2026-05-04 15:12:35.940 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 15:12:36.033 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:12:36.125 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 15:12:37.050 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 15:12:41.968 +05:30 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2026-05-04 15:12:42.266 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 15:12:42.294 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 6158.9779ms
+2026-05-04 15:12:42.296 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:12:42.315 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories - 200 null application/json; charset=utf-8 6375.4255ms
+2026-05-04 15:32:41.845 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 15:32:41.953 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 15:32:42.263 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 15:32:42.264 +05:30 [INF] Hosting environment: Development
+2026-05-04 15:32:42.264 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 15:32:43.246 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 15:32:43.982 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 755.9571ms
+2026-05-04 15:32:44.006 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 15:32:44.008 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 15:32:44.025 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 18.7051ms
+2026-05-04 15:32:44.116 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 108.017ms
+2026-05-04 15:32:44.179 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 15:32:44.319 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 140.4378ms
+2026-05-04 15:32:58.409 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 15:32:58.499 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:32:58.582 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 15:32:59.598 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 15:32:59.624 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 1029.1721ms
+2026-05-04 15:32:59.629 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:32:59.644 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Unable to resolve service for type 'Microsoft.Extensions.Logging.ILogger' while attempting to activate 'eCommerce.Api.Controllers.v1.CategoriesController'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method12(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass6_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 15:32:59.771 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories - 500 null text/plain; charset=utf-8 1362.4886ms
+2026-05-04 15:34:14.211 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 15:34:14.257 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 47.1825ms
+2026-05-04 15:34:14.363 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 15:34:14.374 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 15:34:14.380 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 4.4333ms
+2026-05-04 15:34:14.441 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 78.2677ms
+2026-05-04 15:34:14.535 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 15:34:14.730 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 196.4613ms
+2026-05-04 15:34:19.518 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 15:34:19.524 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:34:19.540 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:34:19.544 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Multiple constructors accepting all given argument types have been found in type 'eCommerce.Api.Controllers.v1.CategoriesController'. There should only be one applicable constructor.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.TryFindMatchingConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfo& matchingConstructor, Nullable`1[]& parameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.FindApplicableConstructor(Type instanceType, Type[] argumentTypes, ConstructorInfoEx[] constructors, ConstructorInfo& matchingConstructor, Nullable`1[]& matchingParameterMap)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactoryInternal(Type instanceType, Type[] argumentTypes, ParameterExpression& provider, ParameterExpression& argumentArray, Expression& factoryExpressionBody)
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.CreateFactory(Type instanceType, Type[] argumentTypes)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerActivatorProvider.CreateActivator(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.CreateControllerFactory(ControllerActionDescriptor descriptor)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvokerCache.GetCachedResult(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Routing.ControllerRequestDelegateFactory.<>c__DisplayClass12_0.<CreateRequestDelegate>b__0(HttpContext context)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.Invoke(HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-05-04 15:34:19.546 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories - 500 null text/plain; charset=utf-8 28.2237ms
+2026-05-04 15:45:36.070 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 15:45:36.153 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 15:45:36.404 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 15:45:36.404 +05:30 [INF] Hosting environment: Development
+2026-05-04 15:45:36.405 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 15:45:37.898 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 15:45:38.541 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 665.4619ms
+2026-05-04 15:45:38.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 15:45:38.778 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 15:45:38.802 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 23.8909ms
+2026-05-04 15:45:39.030 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 252.5192ms
+2026-05-04 15:45:39.194 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 15:45:39.451 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 257.0248ms
+2026-05-04 15:45:45.471 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 15:45:45.544 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:45:45.609 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 15:45:46.433 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 15:45:46.443 +05:30 [INF] Get all categories
+2026-05-04 15:45:50.816 +05:30 [INF] Executed DbCommand (84ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2026-05-04 15:45:51.038 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 15:45:51.063 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 5444.2722ms
+2026-05-04 15:45:51.064 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 15:45:51.086 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories - 200 null application/json; charset=utf-8 5615.7661ms
+2026-05-04 15:55:56.421 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 15:55:57.878 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 15:55:57.880 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 15:55:58.188 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 15:55:58.243 +05:30 [INF] Hosting environment: Development
+2026-05-04 15:55:58.253 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 15:55:58.483 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 15:55:58.907 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 480.6656ms
+2026-05-04 15:55:59.194 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 15:55:59.452 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 15:55:59.467 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 15:55:59.472 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 277.5848ms
+2026-05-04 15:55:59.773 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 15:56:00.424 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 654.2255ms
+2026-05-04 15:56:00.561 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 15:56:00.572 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 15:56:00.585 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 25.0158ms
+2026-05-04 15:56:00.705 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 133.2292ms
+2026-05-04 15:56:01.004 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 15:56:01.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 141.0319ms
+2026-05-04 15:56:03.524 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 15:56:03.529 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 5.1054ms
+2026-05-04 15:56:03.530 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 15:56:03.542 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 15:56:03.543 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 15:56:03.543 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 13.9621ms
+2026-05-04 15:56:42.365 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 15:56:42.367 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 2.5237ms
+2026-05-04 15:56:42.377 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 15:56:42.385 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 15:56:42.385 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 15:56:42.386 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 9.2622ms
+2026-05-04 15:56:51.530 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 15:56:51.532 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 2.3544ms
+2026-05-04 15:56:51.534 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 15:56:51.535 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 15:56:51.535 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 15:56:51.535 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 1.5341ms
+2026-05-04 16:01:42.122 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 16:01:42.984 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 16:01:42.986 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 16:01:43.200 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 16:01:43.200 +05:30 [INF] Hosting environment: Development
+2026-05-04 16:01:43.200 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 16:01:44.753 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 16:01:45.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 703.0818ms
+2026-05-04 16:01:45.524 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 16:01:45.527 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 16:01:45.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 28.284ms
+2026-05-04 16:01:45.694 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 168.1277ms
+2026-05-04 16:01:45.900 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 16:01:46.162 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 261.8529ms
+2026-05-04 16:01:55.334 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 16:01:55.375 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 42.4059ms
+2026-05-04 16:01:55.425 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 16:01:55.591 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 16:01:55.600 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 16:01:55.601 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 176.3161ms
+2026-05-04 16:02:20.847 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 16:02:20.849 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 2.7077ms
+2026-05-04 16:02:20.853 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 16:02:20.870 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 16:02:20.871 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 16:02:20.872 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 0 null 19.5416ms
+2026-05-04 16:02:23.940 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/products - null null
+2026-05-04 16:02:23.940 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/products - 307 0 null 0.9469ms
+2026-05-04 16:02:23.941 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/products - null null
+2026-05-04 16:02:23.947 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-04 16:02:23.978 +05:30 [INF] Route matched with {action = "GetAllProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Product.ProductDto]]] GetAllProducts() on controller eCommerce.Api.Controllers.v1.ProductsController (eCommerce.Api).
+2026-05-04 16:02:24.494 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 16:02:27.683 +05:30 [INF] Executed DbCommand (72ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[ProductId], [p].[CategoryId], [p].[Description], [p].[Discount], [p].[Gender], [p].[MadeIn], [p].[ManufacturingDate], [p].[Picture], [p].[ProductName], [p].[Quantity], [p].[ReturnPolicy], [p].[ShoeType], [p].[UnitPrice], [p].[WarrantyPeriod]
+FROM [Products] AS [p]
+2026-05-04 16:02:27.733 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-04 16:02:27.739 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api) in 3756.0018ms
+2026-05-04 16:02:27.740 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.ProductsController.GetAllProducts (eCommerce.Api)'
+2026-05-04 16:02:27.758 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/products - 204 null null 3816.692ms
+2026-05-04 16:02:33.556 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/carts - null null
+2026-05-04 16:02:33.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/carts - 307 0 null 2.7522ms
+2026-05-04 16:02:33.560 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/carts - null null
+2026-05-04 16:02:33.561 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CartsController.GetAllCarts (eCommerce.Api)'
+2026-05-04 16:02:33.573 +05:30 [INF] Route matched with {action = "GetAllCarts", controller = "Carts"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Cart.CartDto]]] GetAllCarts() on controller eCommerce.Api.Controllers.v1.CartsController (eCommerce.Api).
+2026-05-04 16:02:33.696 +05:30 [INF] Executed DbCommand (14ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CartId], [c].[CartDate], [c].[CustomerId]
+FROM [Carts] AS [c]
+2026-05-04 16:02:33.697 +05:30 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2026-05-04 16:02:33.697 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CartsController.GetAllCarts (eCommerce.Api) in 123.2005ms
+2026-05-04 16:02:33.697 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CartsController.GetAllCarts (eCommerce.Api)'
+2026-05-04 16:02:33.697 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/carts - 204 null null 137.6641ms
+2026-05-04 16:02:36.201 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/roles - null null
+2026-05-04 16:02:36.203 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/roles - 307 0 null 2.4478ms
+2026-05-04 16:02:36.204 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/roles - null null
+2026-05-04 16:02:36.206 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/roles - 404 0 null 1.3896ms
+2026-05-04 16:02:36.207 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7274/api/v1/roles, Response status code: 404
+2026-05-04 16:02:39.642 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/roles - null null
+2026-05-04 16:02:39.643 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/roles - 307 0 null 0.9044ms
+2026-05-04 16:02:39.645 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/roles - null null
+2026-05-04 16:02:39.646 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/roles - 404 0 null 1.5117ms
+2026-05-04 16:02:39.647 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7274/api/v1/roles, Response status code: 404
+2026-05-04 16:10:19.532 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 16:10:20.100 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 16:10:20.102 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 16:10:20.274 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 16:10:20.275 +05:30 [INF] Hosting environment: Development
+2026-05-04 16:10:20.275 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 16:10:20.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 16:10:21.292 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 420.1671ms
+2026-05-04 16:10:21.342 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 16:10:21.350 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 8.1889ms
+2026-05-04 16:10:21.359 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 16:10:21.402 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.4809ms
+2026-05-04 16:10:21.582 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 16:10:21.749 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 176.9936ms
+2026-05-04 16:10:29.630 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1/categories - null null
+2026-05-04 16:10:29.650 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1/categories - 307 0 null 19.4723ms
+2026-05-04 16:10:29.702 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/categories - null null
+2026-05-04 16:10:29.754 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 16:10:29.767 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 16:10:29.767 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/categories - 401 null application/json; charset=utf-8 65.0976ms
+2026-05-04 16:23:27.909 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 16:23:28.657 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 16:23:28.658 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 16:23:28.850 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 16:23:28.850 +05:30 [INF] Hosting environment: Development
+2026-05-04 16:23:28.850 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 16:23:30.564 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 16:23:31.013 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 465.1214ms
+2026-05-04 16:23:31.045 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 16:23:31.063 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 18.4131ms
+2026-05-04 16:23:31.067 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 16:23:31.144 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 77.4658ms
+2026-05-04 16:23:31.231 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 16:23:31.348 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 117.3738ms
+2026-05-04 16:28:10.297 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=1 - application/json 61
+2026-05-04 16:28:10.610 +05:30 [INF] CORS policy execution failed.
+2026-05-04 16:28:10.611 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-04 16:28:10.883 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-04 16:28:11.026 +05:30 [INF] Route matched with {action = "CreateUserWithRole", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateUserWithRole(eCommerce.Application.DTOs.User.CreateUserDto, Int32) on controller eCommerce.Api.Controllers.v1.UsersController (eCommerce.Api).
+2026-05-04 16:28:11.702 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 16:28:14.769 +05:30 [INF] Executed DbCommand (100ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Description], [r].[RoleName]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__p_0
+2026-05-04 16:28:15.417 +05:30 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1);
+2026-05-04 16:28:15.447 +05:30 [INF] Executed DbCommand (9ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RoleUser] ([RolesRoleId], [UsersUserId])
+VALUES (@p2, @p3);
+2026-05-04 16:28:15.477 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 16:28:15.496 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api) in 4465.4712ms
+2026-05-04 16:28:15.498 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-04 16:28:15.509 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=1 - 200 null application/json; charset=utf-8 5220.9846ms
+2026-05-04 16:28:47.774 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - application/json 67
+2026-05-04 16:28:47.795 +05:30 [INF] CORS policy execution failed.
+2026-05-04 16:28:47.796 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-04 16:28:47.801 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-04 16:28:47.802 +05:30 [INF] Route matched with {action = "CreateUserWithRole", controller = "Users"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] CreateUserWithRole(eCommerce.Application.DTOs.User.CreateUserDto, Int32) on controller eCommerce.Api.Controllers.v1.UsersController (eCommerce.Api).
+2026-05-04 16:28:47.897 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[RoleId], [r].[Description], [r].[RoleName]
+FROM [Roles] AS [r]
+WHERE [r].[RoleId] = @__p_0
+2026-05-04 16:28:48.162 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 100), @p1='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Email], [Password])
+OUTPUT INSERTED.[UserId]
+VALUES (@p0, @p1);
+2026-05-04 16:28:48.166 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[@p2='?' (DbType = Int32), @p3='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [RoleUser] ([RolesRoleId], [UsersUserId])
+VALUES (@p2, @p3);
+2026-05-04 16:28:48.168 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-04 16:28:48.169 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api) in 366.5368ms
+2026-05-04 16:28:48.169 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.UsersController.CreateUserWithRole (eCommerce.Api)'
+2026-05-04 16:28:48.169 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Users?roleId=2 - 200 null application/json; charset=utf-8 395.3301ms
+2026-05-04 16:39:42.752 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 16:39:43.826 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 16:39:43.827 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 16:39:44.033 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 16:39:44.034 +05:30 [INF] Hosting environment: Development
+2026-05-04 16:39:44.034 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 16:39:45.700 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 16:39:46.404 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 725.4773ms
+2026-05-04 16:39:46.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 16:39:46.570 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 16:39:46.589 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 21.9222ms
+2026-05-04 16:39:46.754 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 184.2562ms
+2026-05-04 16:39:46.962 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 16:39:47.117 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 156.4071ms
+2026-05-04 16:58:26.097 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 16:58:27.105 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 16:58:27.106 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 16:58:27.355 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 16:58:27.356 +05:30 [INF] Hosting environment: Development
+2026-05-04 16:58:27.356 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 16:58:29.114 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 16:58:29.783 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 690.3875ms
+2026-05-04 16:58:29.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 16:58:29.873 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 16:58:29.895 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 23.2538ms
+2026-05-04 16:58:29.993 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 121.2545ms
+2026-05-04 16:58:30.096 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 16:58:30.242 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 146.7772ms
+2026-05-04 16:59:36.961 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 16:59:37.028 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 68.9888ms
+2026-05-04 16:59:37.145 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 16:59:37.319 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 16:59:37.355 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 16:59:37.356 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 210.8268ms
+2026-05-04 17:00:41.205 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5169/api/v1.0/Security/login - application/json 67
+2026-05-04 17:00:41.221 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5169/api/v1.0/Security/login - 307 0 null 16.9656ms
+2026-05-04 17:00:41.233 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1.0/Security/login - application/json 67
+2026-05-04 17:00:41.275 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:00:41.414 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-04 17:00:47.270 +05:30 [INF] Executed DbCommand (160ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-04 17:00:48.158 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-04 17:00:48.187 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 6766.9048ms
+2026-05-04 17:00:48.189 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:00:48.207 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1.0/Security/login - 200 null application/json; charset=utf-8 6975.0226ms
+2026-05-04 17:01:36.080 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:01:36.096 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 23.3963ms
+2026-05-04 17:01:36.099 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:01:36.112 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:01:36.116 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:01:36.117 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 18.1945ms
+2026-05-04 17:01:53.598 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:01:53.601 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 2.9889ms
+2026-05-04 17:01:53.618 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:01:53.641 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:01:53.642 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:01:53.643 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 36.986ms
+2026-05-04 17:02:04.104 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:02:04.105 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 1.6723ms
+2026-05-04 17:02:04.111 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:02:04.112 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:02:04.112 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:02:04.113 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 1.943ms
+2026-05-04 17:02:50.295 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:02:50.312 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 49.3378ms
+2026-05-04 17:02:50.319 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:02:50.325 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:02:50.328 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:02:50.328 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 10.2468ms
+2026-05-04 17:03:11.740 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:03:11.742 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 2.108ms
+2026-05-04 17:03:11.747 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:03:11.748 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:03:11.749 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:03:11.749 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 2.181ms
+2026-05-04 17:04:13.957 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:04:13.962 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 5.7636ms
+2026-05-04 17:04:13.965 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:04:13.968 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:04:13.969 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:04:13.969 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 4.1567ms
+2026-05-04 17:04:36.923 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - null null
+2026-05-04 17:04:36.938 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5169/api/v1.0/Categories - 307 0 null 18.1327ms
+2026-05-04 17:04:36.942 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:04:36.943 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:04:36.945 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:04:36.946 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 4.2396ms
+2026-05-04 17:05:19.213 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:05:19.232 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:05:19.239 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:05:19.239 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 27.0488ms
+2026-05-04 17:05:54.091 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - null null
+2026-05-04 17:05:54.093 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:05:54.094 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:05:54.095 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1.0/Categories - 401 null application/json; charset=utf-8 4.0764ms
+2026-05-04 17:06:20.438 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:06:20.449 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:06:20.456 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:06:20.456 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 59.2918ms
+2026-05-04 17:06:22.343 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:06:22.344 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:06:22.345 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:06:22.349 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 1.9982ms
+2026-05-04 17:06:38.225 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:06:38.226 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:06:38.227 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:06:38.227 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 2.0819ms
+2026-05-04 17:06:42.955 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:06:42.957 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:06:42.958 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:06:42.958 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 3.1426ms
+2026-05-04 17:08:07.354 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Security/login - application/json 67
+2026-05-04 17:08:07.378 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:08:07.411 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-04 17:08:08.133 +05:30 [INF] Executed DbCommand (91ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-04 17:08:08.305 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-04 17:08:08.310 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 898.6456ms
+2026-05-04 17:08:08.310 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:08:08.312 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Security/login - 200 null application/json; charset=utf-8 960.9551ms
+2026-05-04 17:09:31.944 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:09:32.138 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:09:32.201 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 17:09:32.541 +05:30 [WRN] You do not have a valid license key for the Lucky Penny software AutoMapper. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-05-04 17:09:32.548 +05:30 [INF] Get all categories
+2026-05-04 17:09:32.807 +05:30 [INF] Executed DbCommand (30ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2026-05-04 17:09:32.980 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 17:09:33.008 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 806.9393ms
+2026-05-04 17:09:33.009 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:09:33.009 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 200 null application/json; charset=utf-8 1068.0062ms
+2026-05-04 17:10:02.380 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:10:02.388 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:10:02.388 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 17:10:02.393 +05:30 [INF] Get all categories
+2026-05-04 17:10:02.394 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 17:10:02.394 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 6.2493ms
+2026-05-04 17:10:02.394 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:10:02.395 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 200 null application/json; charset=utf-8 52.8971ms
+2026-05-04 17:12:27.246 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Security/login - application/json 67
+2026-05-04 17:12:27.276 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:12:27.283 +05:30 [INF] Route matched with {action = "Post", controller = "Security"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[eCommerce.Application.VMS.AuthenticationResponseVM]] Post(eCommerce.Application.DTOs.User.UserDto) on controller eCommerce.Api.Controllers.v1.SecurityController (eCommerce.Api).
+2026-05-04 17:12:27.578 +05:30 [INF] Executed DbCommand (167ms) [Parameters=[@__email_0='?' (Size = 100)], CommandType='"Text"', CommandTimeout='30']
+SELECT [t].[UserId], [t].[Email], [t].[Password], [t0].[RolesRoleId], [t0].[UsersUserId], [t0].[RoleId], [t0].[Description], [t0].[RoleName]
+FROM (
+    SELECT TOP(1) [u].[UserId], [u].[Email], [u].[Password]
+    FROM [Users] AS [u]
+    WHERE [u].[Email] = @__email_0
+) AS [t]
+LEFT JOIN (
+    SELECT [r].[RolesRoleId], [r].[UsersUserId], [r0].[RoleId], [r0].[Description], [r0].[RoleName]
+    FROM [RoleUser] AS [r]
+    INNER JOIN [Roles] AS [r0] ON [r].[RolesRoleId] = [r0].[RoleId]
+) AS [t0] ON [t].[UserId] = [t0].[UsersUserId]
+ORDER BY [t].[UserId], [t0].[RolesRoleId], [t0].[UsersUserId]
+2026-05-04 17:12:27.854 +05:30 [INF] Executing OkObjectResult, writing value of type 'eCommerce.Application.VMS.AuthenticationResponseVM'.
+2026-05-04 17:12:27.860 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api) in 576.3349ms
+2026-05-04 17:12:27.860 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.SecurityController.Post (eCommerce.Api)'
+2026-05-04 17:12:27.865 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Security/login - 200 null application/json; charset=utf-8 622.6569ms
+2026-05-04 17:13:39.698 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:13:39.783 +05:30 [INF] Failed to validate the token.
+System.ArgumentException: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+ ---> System.FormatException: IDX10400: Unable to decode: '[PII of type 'System.String' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64url encoded string.
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output, Boolean needReplace, Int32 decodedLength)
+   at Microsoft.IdentityModel.Tokens.Base64UrlEncoder.Decode(ReadOnlySpan`1 strSpan, Span`1 output)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.CreateClaimSet(ReadOnlySpan`1 strSpan, Int32 startIndex, Int32 length, Boolean createHeaderClaimSet)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   --- End of inner exception stack trace ---
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken.ReadToken(ReadOnlyMemory`1 encodedTokenMemory)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebToken..ctor(String jwtEncodedString, TryReadJwtClaim tryReadJwtClaim)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ReadToken(String token, TokenValidationParameters validationParameters)
+2026-05-04 17:13:40.040 +05:30 [INF] Bearer was not authenticated. Failure message: IDX14102: Unable to decode the header '[PII of type 'Microsoft.IdentityModel.Logging.SecurityArtifact' is hidden. For more details, see https://aka.ms/IdentityModel/PII.]' as Base64Url encoded string.
+2026-05-04 17:13:40.044 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin|Customer)
+2026-05-04 17:13:40.058 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:13:40.059 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 401 null application/json; charset=utf-8 361.8966ms
+2026-05-04 17:13:57.545 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Categories - null null
+2026-05-04 17:13:57.570 +05:30 [INF] Executing endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:13:57.573 +05:30 [INF] Route matched with {action = "GetAll", controller = "Categories"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[eCommerce.Application.DTOs.Category.CategoryDto]]] GetAllAsync() on controller eCommerce.Api.Controllers.v1.CategoriesController (eCommerce.Api).
+2026-05-04 17:13:57.591 +05:30 [INF] Get all categories
+2026-05-04 17:13:57.641 +05:30 [INF] Executed DbCommand (28ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CategoryId], [c].[CategoryName], [c].[Description]
+FROM [Categories] AS [c]
+2026-05-04 17:13:57.667 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Category.CategoryDto, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-04 17:13:57.668 +05:30 [INF] Executed action eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api) in 94.577ms
+2026-05-04 17:13:57.668 +05:30 [INF] Executed endpoint 'eCommerce.Api.Controllers.v1.CategoriesController.GetAllAsync (eCommerce.Api)'
+2026-05-04 17:13:57.669 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Categories - 200 null application/json; charset=utf-8 125.0815ms
+2026-05-04 17:15:43.297 +05:30 [INF] Request starting HTTP/1.1 GET https://localhost:7274/api/v1/Product - null null
+2026-05-04 17:15:43.316 +05:30 [INF] Request finished HTTP/1.1 GET https://localhost:7274/api/v1/Product - 404 0 null 19.1593ms
+2026-05-04 17:15:43.326 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7274/api/v1/Product, Response status code: 404
+2026-05-04 17:16:02.502 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Product - application/json 336
+2026-05-04 17:16:02.507 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Product - 404 0 null 4.7059ms
+2026-05-04 17:16:02.507 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7274/api/v1/Product, Response status code: 404
+2026-05-04 17:17:02.754 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Product - application/json 336
+2026-05-04 17:17:02.756 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Product - 404 0 null 2.3491ms
+2026-05-04 17:17:02.757 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7274/api/v1/Product, Response status code: 404
+2026-05-04 17:18:54.320 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7274/api/v1/Products - application/json 328
+2026-05-04 17:18:54.444 +05:30 [INF] CORS policy execution failed.
+2026-05-04 17:18:54.448 +05:30 [INF] Request origin https://localhost:7274 does not have permission to access the resource.
+2026-05-04 17:18:54.503 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-04 17:18:54.539 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-04 17:18:54.540 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7274/api/v1/Products - 401 null application/json; charset=utf-8 255.1267ms
+2026-05-04 17:19:15.083 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Products - application/json 336
+2026-05-04 17:19:15.101 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-04 17:19:15.135 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-04 17:19:15.135 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Products - 403 null application/json; charset=utf-8 52.1407ms
+2026-05-04 17:19:48.078 +05:30 [INF] Request starting HTTP/1.1 POST https://localhost:7274/api/v1/Products - application/json 336
+2026-05-04 17:19:48.082 +05:30 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Admin)
+2026-05-04 17:19:48.083 +05:30 [INF] AuthenticationScheme: Bearer was forbidden.
+2026-05-04 17:19:48.083 +05:30 [INF] Request finished HTTP/1.1 POST https://localhost:7274/api/v1/Products - 403 null application/json; charset=utf-8 6.3974ms
+2026-05-04 18:05:44.815 +05:30 [INF] User profile is available. Using 'C:\Users\pilli\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-04 18:05:46.191 +05:30 [INF] Now listening on: https://localhost:7274
+2026-05-04 18:05:46.192 +05:30 [INF] Now listening on: http://localhost:5169
+2026-05-04 18:05:46.516 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-04 18:05:46.517 +05:30 [INF] Hosting environment: Development
+2026-05-04 18:05:46.517 +05:30 [INF] Content root path: C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Api
+2026-05-04 18:05:49.340 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/index.html - null null
+2026-05-04 18:05:50.132 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/index.html - 200 null text/html;charset=utf-8 832.0031ms
+2026-05-04 18:05:50.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_vs/browserLink - null null
+2026-05-04 18:05:50.309 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-04 18:05:50.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_framework/aspnetcore-browser-refresh.js - 200 16511 application/javascript; charset=utf-8 16.7509ms
+2026-05-04 18:05:50.492 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/_vs/browserLink - 200 null text/javascript; charset=UTF-8 184.1145ms
+2026-05-04 18:05:50.653 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - null null
+2026-05-04 18:05:50.860 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7274/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 208.2382ms

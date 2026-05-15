@@ -1,0 +1,96 @@
+<div class="container my-4">
+  <h3 class="text-center mb-4">{{ title }}</h3>
+
+  <!-- Loading -->
+  @if ((products$ | async) === null) {
+    <div class="text-center mt-5">
+      <div class="spinner-border text-dark" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+      <p class="mt-2 text-muted">Loading products...</p>
+    </div>
+  }
+
+  @if (isLoaded) {
+
+    <!-- Filters -->
+    <div class="row g-3 mb-4 align-items-end">
+
+      <div class="col-md-5">
+        <label class="form-label fw-semibold">Search</label>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Search by product name..."
+          [(ngModel)]="searchTerm"
+          (ngModelChange)="applyFilters()"
+        />
+      </div>
+
+      <div class="col-md-4">
+        <label class="form-label fw-semibold">Sort by Price</label>
+        <select class="form-select" [(ngModel)]="sortOrder" (ngModelChange)="applyFilters()">
+          <option value="none">Default</option>
+          <option value="asc">Low → High</option>
+          <option value="desc">High → Low</option>
+        </select>
+      </div>
+
+      <div class="col-md-3 text-muted d-flex align-items-end">
+        <small>{{ filteredProducts.length }} result(s)</small>
+      </div>
+
+    </div>
+
+    <!-- Grid -->
+    @if (pagedProducts.length) {
+      <div class="row g-4">
+        @for (product of pagedProducts; track product.productId) {
+          <div class="col-md-4 col-sm-6 col-12">
+            <div class="card h-100 shadow-sm">
+              <img
+                [src]="product.picture"
+                [alt]="product.productName"
+                class="card-img-top"
+                style="height: 250px; object-fit: cover"
+              />
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">{{ product.productName }}</h5>
+                <p class="card-text mb-1">
+                  <strong>Price:</strong> {{ product.unitPrice | currency: 'INR' }}
+                </p>
+                <p class="card-text mb-1"><strong>Made In:</strong> {{ product.madeIn }}</p>
+                <p class="card-text mb-1"><strong>Stock:</strong> {{ product.quantity }}</p>
+                <p class="card-text mb-3"><strong>Discount:</strong> {{ product.discount }}%</p>
+                <a class="btn btn-dark mt-auto" [routerLink]="['/products', product.productId]">
+                  Show Details
+                </a>
+              </div>
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Pagination -->
+      <nav class="mt-4 d-flex justify-content-center">
+        <ul class="pagination">
+          <li class="page-item" [class.disabled]="currentPage === 1">
+            <button class="page-link" (click)="goToPage(currentPage - 1)">‹</button>
+          </li>
+          @for (page of pages; track page) {
+            <li class="page-item" [class.active]="page === currentPage">
+              <button class="page-link" (click)="goToPage(page)">{{ page }}</button>
+            </li>
+          }
+          <li class="page-item" [class.disabled]="currentPage === totalPages">
+            <button class="page-link" (click)="goToPage(currentPage + 1)">›</button>
+          </li>
+        </ul>
+      </nav>
+
+    } @else {
+      <h5 class="text-center text-danger mt-5">No products found.</h5>
+    }
+  }
+
+</div>

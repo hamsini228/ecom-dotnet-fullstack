@@ -1,0 +1,61 @@
+@if (categories$ | async; as categories) {
+  <div class="cat-header">
+    <h3 class="cat-title">{{ title }}</h3>
+    @if (isAdmin) {
+      <button class="cat-btn cat-btn--create" (click)="createCategory()">
+        <span>+</span> New Category
+      </button>
+    }
+  </div>
+
+  <div class="cat-table-wrapper">
+    <table class="cat-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Category Name</th>
+          <th>Description</th>
+          <th>Products</th>
+          @if (isAdmin) {
+            <th>Actions</th>
+          }
+        </tr>
+      </thead>
+      <tbody>
+        @for (category of categories; track category.categoryId) {
+          <tr>
+            <td class="cat-id">{{ category.categoryId }}</td>
+            <td class="cat-name">{{ category.categoryName }}</td>
+            <td class="cat-desc">{{ category.description }}</td>
+            <td>
+              <button class="cat-btn cat-btn--view" (click)="showProducts(category.categoryId)">
+                View Products
+              </button>
+            </td>
+            @if (isAdmin) {
+              <td>
+                <button class="cat-btn cat-btn--delete" (click)="deleteCategory(category.categoryId)">
+                  Delete
+                </button>
+              </td>
+            }
+          </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+
+  @if (selctedCategoryId) {
+    <hr class="cat-divider" />
+    @defer {
+      <bajaj-category-details [categoryId]="selctedCategoryId"></bajaj-category-details>
+    } @placeholder {
+      <p class="cat-loading">Loading content, please wait…</p>
+    }
+  }
+
+} @else {
+  <div class="cat-empty">
+    <p>No categories found.</p>
+  </div>
+}

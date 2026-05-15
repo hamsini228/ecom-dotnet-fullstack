@@ -1,0 +1,20 @@
+## Ignore Visual Studio temporary files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+
+## Rider / VS Code
+.vscode/
+.idea/
+
+## Node
+node_modules/
+
+## Logs
+*.log
+
+## OS files
+.DS_Store
+Thumbs.db

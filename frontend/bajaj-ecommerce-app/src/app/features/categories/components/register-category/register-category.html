@@ -1,0 +1,49 @@
+<div class="container">
+    <h1 class="text-center ">{{title}}</h1>
+    <hr>
+    <form [formGroup]="category.categoryForm" (ngSubmit)="onCategorySubmit()" #categoryForm="ngForm">
+        <div class="mb-3">
+            <label for="inputCategoryName" class="form-label">Category Name</label>
+            <input type="text" class="form-control" id="inputCategoryName" aria-describedby="categoryNameHelp"
+                name="categoryName" formControlName="categoryName">
+            @if (category.categoryForm.get('categoryName')?.invalid&&
+            (category.categoryForm.get('categoryName')?.touched || category.categoryForm.get('categoryName')?.dirty)) {
+            @if (category.categoryForm.controls['categoryName'].errors?.['required']) {
+            <div class="alert alert-danger">
+                Category name is required
+            </div>
+            }
+            @if (category.categoryForm.controls['categoryName'].errors?.['minlength']) {
+            <div class="alert alert-danger">
+                Category name must be minimum 3 characters long!
+            </div>
+            }
+            @if (category.categoryForm.controls['categoryName'].errors?.['maxlength']) {
+            <div class="alert alert-danger">
+                Category name must not excees 20 characters!
+            </div>
+            }
+            }
+        </div>
+        <div class="mb-3">
+            <label for="inputCategoryDescription" class="form-label">Category Description</label>
+            <input type="text" class="form-control" id="inputCategoryDescription"
+                aria-describedby="categoryDescriptionHelp" name="description" formControlName="description">
+            @if (category.categoryForm.get('description')?.invalid&&
+            (category.categoryForm.get('description')?.touched || category.categoryForm.get('description')?.dirty)) {
+            @if (category.categoryForm.controls['description'].errors?.['required']) {
+            <div class="alert alert-danger">
+                Category description is required!
+            </div>
+            }
+           
+            @if (category.categoryForm.controls['description'].errors?.['maxlength']) {
+            <div class="alert alert-danger">
+                Category description must not excees 200 characters!
+            </div>
+            }
+            }
+        </div>
+        <button type="submit" [disabled]="!categoryForm.valid" class="btn btn-dark">Resgiter New Category</button>
+    </form>
+</div>

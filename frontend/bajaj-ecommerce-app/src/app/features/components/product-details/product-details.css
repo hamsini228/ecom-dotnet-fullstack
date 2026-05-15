@@ -1,0 +1,41 @@
+
+.main-img {
+    height: 500px;          
+    width: 100%;
+    object-fit: cover;      
+    border-radius: 12px;
+    border: 1px solid #ddd;
+}
+
+.thumb-img {
+    width: 80px;           
+    height: 80px;           
+    object-fit: cover;      
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+.thumb-img:hover {
+    transform: scale(1.05);
+    border-color: #000;
+}
+
+
+.col-md-6.d-flex {
+    align-items: flex-start;
+}
+
+
+@media (max-width: 768px) {
+    .main-img {
+        height: 300px;
+    }
+
+    .thumb-img {
+        width: 60px;
+        height: 60px;
+    }
+}

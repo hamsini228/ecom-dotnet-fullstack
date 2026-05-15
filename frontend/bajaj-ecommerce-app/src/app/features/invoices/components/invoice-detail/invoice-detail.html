@@ -1,0 +1,105 @@
+<!-- invoice-detail.html -->
+@if (invoiceData$ | async; as data) {
+
+  <div class="invoice-page">
+
+    <!-- Header -->
+    <div class="invoice-header">
+      <div class="left">
+        <p class="receipt-label">OFFICIAL RECEIPT</p>
+        <h1>Invoice</h1>
+        <p>{{ data.invoice.invoiceDate | date: 'dd MMM yyyy - hh:mm a' }}</p>
+      </div>
+      <div class="right">
+        <p>Invoice No.</p>
+        <h2>#{{ data.invoice.invoiceId }}</h2>
+        <span class="paid-badge">✔ PAID</span>
+      </div>
+    </div>
+
+    <!-- Payment Info -->
+    <div class="section">
+      <h4>PAYMENT INFO</h4>
+      <div class="info-row">
+        <span>Payment ID</span>
+        <strong>{{ data.invoice.paymentId }}</strong>
+      </div>
+      <div class="info-row">
+        <span>Order ID</span>
+        <strong>{{ data.invoice.orderId }}</strong>
+      </div>
+      <div class="info-row">
+        <span>Payment Method</span>
+        <strong>Razorpay</strong>
+      </div>
+    </div>
+
+    <!-- Order Items -->
+    <div class="section">
+      <h4>ORDER ITEMS</h4>
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th>PRODUCT</th>
+            <th>QTY</th>
+            <th>MRP</th>
+            <th>DISC</th>
+            <th>TOTAL</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (detail of data.cartDetails; track detail.cartItem.cartItemId) {
+            <tr>
+              <td>
+                <div>{{ detail.product.productName }}</div>
+                <small>{{ detail.product.shoeType }}</small>
+              </td>
+              <td>{{ detail.cartItem.quantity }}</td>
+              <td>₹{{ detail.product.unitPrice }}</td>
+              <td>{{ detail.product.discount }}% OFF</td>
+              <td>
+                ₹{{ (detail.product.unitPrice - (detail.product.unitPrice * detail.product.discount / 100))
+                    * detail.cartItem.quantity | number:'1.0-0' }}
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary-box">
+      <div class="summary-row">
+        <span>Original Total</span>
+        <span>₹{{ originalTotal(data.cartDetails) }}</span>
+      </div>
+      <div class="summary-row saved">
+        <span>You Saved</span>
+        <span>- ₹{{ totalSavings(data.cartDetails) }}</span>
+      </div>
+      <div class="summary-row">
+        <span>Shipping</span>
+        <span class="free">Free</span>
+      </div>
+      <hr />
+      <div class="summary-row grand">
+        <strong>Amount Paid</strong>
+        <strong>₹{{ grandTotal(data.cartDetails) }}</strong>
+      </div>
+    </div>
+
+    <!-- Actions -->
+    <div class="invoice-actions">
+      <button routerLink="/products" class="continue-btn">Continue Shopping</button>
+      <!-- <a class="btn-primary" [routerLink]="['/products']" routerLinkActive="router-link-active" >Continue Shopping</a> -->
+      <!-- <button onclick="window.print()" class="print-btn">Print</button> -->
+    </div>
+
+  </div>
+
+} @else {
+  <!-- Shows while observable is pending -->
+  <div class="loading">
+    <p>Generating your invoice...</p>
+  </div>
+}

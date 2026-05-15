@@ -1,0 +1,227 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\areas\\carts\\views\\home\\yourcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\areas\\carts\\views\\home\\yourcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\areas\\carts\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\areas\\carts\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|solutionrelative:bajaj.ecommerce.entities\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.entities\\yourcartvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|solutionrelative:bajaj.ecommerce.entities\\yourcartvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B0649C2-BBB7-4F38-92CF-512C0C2BA386}|Bajaj.eCommerce.Entities\\Bajaj.eCommerce.Entities.csproj|solutionrelative:bajaj.ecommerce.entities\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\areas\\products\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\areas\\products\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{594D27C8-B98C-4222-A67B-7DCBB6E1F3FC}|Bajaj.eCommerce.Api\\Bajaj.eCommerce.Api.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{594D27C8-B98C-4222-A67B-7DCBB6E1F3FC}|Bajaj.eCommerce.Api\\Bajaj.eCommerce.Api.csproj|solutionrelative:bajaj.ecommerce.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|c:\\users\\pilli\\onedrive\\desktop\\.net\u0026angular training\\asp.netcore\\bajaj.ecommerce\\bajaj.ecommerce.mvc.ui\\areas\\categories\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35585F7E-11FA-4A91-8756-A758A4DC1CF8}|Bajaj.eCommerce.Mvc.UI\\Bajaj.eCommerce.Mvc.UI.csproj|solutionrelative:bajaj.ecommerce.mvc.ui\\areas\\categories\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 375,
+          "SelectedChildIndex": 12,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Program.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Program.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Program.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Program.cs",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-12T06:08:10.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2026-05-12T06:08:09.135Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-05-12T05:01:17.609Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\CartItem.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Entities\\CartItem.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\CartItem.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Entities\\CartItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T18:10:35.449Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cart.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\Cart.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Entities\\Cart.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\Cart.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Entities\\Cart.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T18:10:30.944Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAmwE4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T18:04:04.992Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "YourCartVM.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\YourCartVM.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Entities\\YourCartVM.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Entities\\YourCartVM.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Entities\\YourCartVM.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T17:59:58.545Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "YourCart.cshtml",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Views\\Home\\YourCart.cshtml",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Views\\Home\\YourCart.cshtml",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Views\\Home\\YourCart.cshtml",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Areas\\Carts\\Views\\Home\\YourCart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T17:59:33.083Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Products\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Areas\\Products\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Products\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Areas\\Products\\Views\\Home\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-11T17:16:01.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Api\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Api\\Controllers\\CategoriesController.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Api\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Api\\Controllers\\CategoriesController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T10:25:31.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Categories\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Areas\\Categories\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Areas\\Categories\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Areas\\Categories\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-11T10:22:23.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Bajaj.eCommerce.Mvc.UI\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\pilli\\OneDrive\\Desktop\\.net\u0026angular training\\ASP.NETCORE\\Bajaj.eCommerce\\Bajaj.eCommerce.Mvc.UI\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Bajaj.eCommerce.Mvc.UI\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-05-10T07:57:21.103Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 57,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

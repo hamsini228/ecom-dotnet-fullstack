@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- HERO SECTION -->
+<div class="hero d-flex align-items-center text-white"
+     style="height: 90vh; background: url('/images/banner.jpg') center/cover no-repeat;">
+
+    <div class="container text-center">
+        <h1 class="display-3 fw-bold">Step Into Style</h1>
+        <p class="lead">Find your perfect pair today</p>
+        <a  class="btn btn-dark btn-lg mt-3" asp-area="Products" asp-controller="Home" asp-action="Index" >Shop Now</a>
+    </div>
+</div>
+
+<div class="container py-5 text-center">
+    <h2 class="fw-bold mb-5">Shop by Category</h2>
+
+    <div class="row">
+        <div class="col-md-3 d-flex">
+            <div class="category-card w-100">
+                <img src="~/images/men.jpg" class="category-img">
+                <h5 class="mt-3">Men</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="category-card w-100">
+                <img src="~/images/women.jpg" class="category-img">
+                <h5 class="mt-3">Women</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="category-card w-100">
+                <img src="~/images/sports.jpg" class="category-img">
+                <h5 class="mt-3">Sports</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3 d-flex">
+            <div class="category-card w-100">
+                <img src="~/images/casual.jpg" class="category-img">
+                <h5 class="mt-3">Casual</h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FEATURED IMAGES -->
+<div class="container py-5">
+    <h2 class="text-center fw-bold mb-4">Trending Styles</h2>
+
+    <div class="row g-4">
+        <div class="col-md-3">
+            <img src="~/images/shoe1.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-3">
+            <img src="~/images/shoe2.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-3">
+            <img src="~/images/shoe3.jpg" class="img-fluid rounded shadow">
+        </div>
+        <div class="col-md-3">
+            <img src="~/images/shoe4.jpg" class="img-fluid rounded shadow">
+        </div>
+    </div>
+</div>
+
+
+<!-- OFFER SECTION -->
+<div class="bg-dark text-white text-center py-5">
+    <h2 class="fw-bold">Flat 50% Off</h2>
+    <p>On selected collections</p>
+    <a class="btn btn-dark btn-lg mt-3" asp-area="Products" asp-controller="Home" asp-action="Index">Shop Now</a>
+</div>
+
+
+<!-- WHY CHOOSE US -->
+<div class="container py-5 text-center">
+    <div class="row">
+        <div class="col-md-4">
+            <h5>🚚 Free Shipping</h5>
+        </div>
+        <div class="col-md-4">
+            <h5>🔄 Easy Returns</h5>
+        </div>
+        <div class="col-md-4">
+            <h5>🔒 Secure Payment</h5>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+

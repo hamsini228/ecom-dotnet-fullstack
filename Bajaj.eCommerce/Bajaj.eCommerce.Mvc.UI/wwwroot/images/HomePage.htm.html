@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ATELIER – The Architecture of Living</title>
+
+  <!-- Bootstrap CSS -->
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* Only a few things Bootstrap can't do */
+    body          { font-family: 'DM Sans', sans-serif; }
+    h1, h2, h3, h4 { font-family: 'Cormorant Garamond', serif; }
+    a             { text-decoration: none; color: inherit; }
+
+    /* Sticky navbar underline on active link */
+    .nav-link.active { border-bottom: 2px solid #212529; }
+
+    /* Make category + product images zoom on hover */
+    .zoom-img img { transition: transform .5s ease; }
+    .zoom-img:hover img { transform: scale(1.05); }
+
+    /* Horizontal scroll row for products on mobile */
+    .scroll-row            { overflow-x: auto; flex-wrap: nowrap; scrollbar-width: none; }
+    .scroll-row::-webkit-scrollbar { display: none; }
+    .scroll-row .col       { min-width: 170px; }
+
+    /* Dark overlay on category cards so label text is readable */
+    .cat-overlay {
+      position: absolute; inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,.55) 0%, transparent 55%);
+    }
+  </style>
+</head>
+<body class="bg-white">
+
+
+<!-- ═══════════════════════════════════════
+     NAVBAR
+     Bootstrap: sticky-top, border-bottom
+     ═══════════════════════════════════════ -->
+<nav class="navbar bg-white border-bottom sticky-top" style="height:54px;">
+  <div class="container-fluid px-3 px-md-4 d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold fs-4 text-dark letter-spacing"
+       style="font-family:'Cormorant Garamond',serif;letter-spacing:.1em;">
+      ATELIER
+    </a>
+
+    <!-- Desktop nav links (hidden on mobile) -->
+    <ul class="nav d-none d-md-flex">
+      <li><a class="nav-link active text-dark fw-semibold" style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;" href="#">Collections</a></li>
+      <li><a class="nav-link text-secondary"               style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;" href="#">New Arrivals</a></li>
+      <li><a class="nav-link text-secondary"               style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;" href="#">Archive</a></li>
+      <li><a class="nav-link text-secondary"               style="font-size:12px;letter-spacing:.06em;text-transform:uppercase;" href="#">Journal</a></li>
+    </ul>
+
+    <!-- Icons + hamburger -->
+    <div class="d-flex align-items-center gap-3">
+      <i class="bi bi-person fs-5"></i>
+      <i class="bi bi-bag    fs-5"></i>
+      <!-- Hamburger (only on mobile) -->
+      <button class="border-0 bg-transparent d-md-none p-0"
+              data-bs-toggle="collapse" data-bs-target="#mobileMenu">
+        <i class="bi bi-list fs-4"></i>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile dropdown -->
+  <div class="collapse border-top" id="mobileMenu">
+    <div class="px-4 py-2">
+      <a class="nav-link py-1 text-dark fw-semibold" href="#">Collections</a>
+      <a class="nav-link py-1 text-secondary"        href="#">New Arrivals</a>
+      <a class="nav-link py-1 text-secondary"        href="#">Archive</a>
+      <a class="nav-link py-1 text-secondary"        href="#">Journal</a>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════
+     HERO
+     row with 2 cols, stacks on mobile
+     ═══════════════════════════════════════ -->
+<section class="bg-light py-5">
+  <div class="container-fluid px-3 px-md-5">
+    <div class="row align-items-center g-4">
+
+      <!-- Left: text -->
+      <div class="col-12 col-md-6">
+        <p class="text-secondary mb-1" style="font-size:10px;letter-spacing:.18em;text-transform:uppercase;">
+          Edition 01 – Minimalist Sanctuary
+        </p>
+        <h1 class="display-3 fw-bold text-dark lh-1 mb-3" style="font-family:'Cormorant Garamond',serif;">
+          The Architecture<br>of Living.
+        </h1>
+        <p class="text-secondary mb-4" style="font-size:13px;line-height:1.8;max-width:340px;">
+          A curated atelier of objects that define the modern interior.
+          Where form meets silence, and quality becomes an atmosphere.
+        </p>
+        <div class="d-flex flex-wrap gap-2">
+          <a href="#" class="btn btn-dark rounded-0 px-4" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">
+            Explore New Arrivals
+          </a>
+          <a href="#" class="btn btn-outline-dark rounded-0 px-4" style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">
+            View Archive
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: hero image -->
+      <div class="col-12 col-md-6">
+        <!-- picsum gives a random beautiful photo; 800x600 -->
+        <img src="https://picsum.photos/seed/sofa/800/500"
+             alt="Minimalist living room"
+             class="img-fluid rounded-1 w-100"
+             style="object-fit:cover;height:360px;" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FEATURED CATEGORIES
+     Bootstrap grid: 2-col mobile, 4-col desktop
+     ═══════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container-fluid px-3 px-md-4">
+
+    <!-- Section header -->
+    <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+      <div>
+        <h2 class="fw-semibold mb-0">Featured Categories</h2>
+        <p class="text-secondary mb-0" style="font-size:11px;">Structured by aesthetic purpose.</p>
+      </div>
+      <a href="#" class="text-secondary border-bottom border-secondary pb-0"
+         style="font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;">
+        Browse All Taxonomy
+      </a>
+    </div>
+
+    <!-- Category grid -->
+    <div class="row g-2">
+
+      <!-- Card 1 – Sculptural Furniture (tall, spans 2 rows) -->
+      <div class="col-6 col-md-3">
+        <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:100%;min-height:300px;">
+          <img src="https://picsum.photos/seed/furniture/400/600"
+               alt="Sculptural Furniture"
+               class="w-100 h-100 object-fit-cover" style="min-height:300px;" />
+          <div class="cat-overlay"></div>
+          <div class="position-absolute bottom-0 start-0 p-3 text-white" style="z-index:2;">
+            <h3 class="fs-6 fw-semibold mb-0">Sculptural Furniture</h3>
+            <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;">34 Artifacts</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards 2-4 on right: stack vertically on desktop -->
+      <div class="col-6 col-md-9">
+        <div class="row g-2 h-100">
+
+          <!-- Card 2 – Artisanal Ceramics (full width on right) -->
+          <div class="col-12 col-md-4">
+            <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:190px;">
+              <img src="https://picsum.photos/seed/ceramics/400/300"
+                   alt="Artisanal Ceramics"
+                   class="w-100 h-100 object-fit-cover" />
+              <div class="cat-overlay"></div>
+              <div class="position-absolute bottom-0 start-0 p-3 text-white" style="z-index:2;">
+                <h3 class="fs-6 fw-semibold mb-0">Artisanal Ceramics</h3>
+                <span style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;opacity:.75;">12 Objects</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 – Luminaires -->
+          <div class="col-6 col-md-4">
+            <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:190px;">
+              <img src="https://picsum.photos/seed/lamp/400/300"
+                   alt="Luminaires"
+                   class="w-100 h-100 object-fit-cover" />
+              <div class="cat-overlay"></div>
+              <div class="position-absolute bottom-0 start-0 p-3 text-white" style="z-index:2;">
+                <h3 class="fs-6 fw-semibold mb-0">Luminaires</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 – Textiles -->
+          <div class="col-6 col-md-4">
+            <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:190px;">
+              <img src="https://picsum.photos/seed/textiles/400/300"
+                   alt="Textiles"
+                   class="w-100 h-100 object-fit-cover" />
+              <div class="cat-overlay"></div>
+              <div class="position-absolute bottom-0 start-0 p-3 text-white" style="z-index:2;">
+                <h3 class="fs-6 fw-semibold mb-0">Textiles</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 2: two wider tiles -->
+          <div class="col-6 col-md-6">
+            <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:100px;">
+              <img src="https://picsum.photos/seed/rug/500/200"
+                   alt="Rugs"
+                   class="w-100 h-100 object-fit-cover" />
+              <div class="cat-overlay"></div>
+              <div class="position-absolute bottom-0 start-0 p-2 text-white" style="z-index:2;">
+                <h3 class="fs-6 fw-semibold mb-0">Rugs</h3>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-6">
+            <div class="position-relative overflow-hidden rounded-1 zoom-img" style="height:100px;">
+              <img src="https://picsum.photos/seed/decor/500/200"
+                   alt="Decor"
+                   class="w-100 h-100 object-fit-cover" />
+              <div class="cat-overlay"></div>
+              <div class="position-absolute bottom-0 start-0 p-2 text-white" style="z-index:2;">
+                <h3 class="fs-6 fw-semibold mb-0">Décor Objects</h3>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     TRENDING PIECES
+     Horizontal scroll on mobile,
+     4-col flex-wrap on desktop
+     ═══════════════════════════════════════ -->
+<section class="py-5 bg-light">
+  <div class="container-fluid px-3 px-md-4">
+
+    <!-- Header -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h2 class="fw-semibold mb-0">Trending Pieces</h2>
+      <div class="d-flex gap-2">
+        <button class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                style="width:32px;height:32px;">
+          <i class="bi bi-chevron-left" style="font-size:12px;"></i>
+        </button>
+        <button class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                style="width:32px;height:32px;">
+          <i class="bi bi-chevron-right" style="font-size:12px;"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Products – scroll on mobile, wrap on desktop -->
+    <div class="d-flex gap-3 scroll-row pb-2">
+
+      <!-- Product 1 -->
+      <div class="col" style="min-width:170px;max-width:220px;">
+        <div class="overflow-hidden rounded-1 zoom-img mb-2" style="aspect-ratio:1;">
+          <img src="https://picsum.photos/seed/chair1/300/300"
+               alt="Monolith Lounge Chair"
+               class="w-100 h-100 object-fit-cover" />
+        </div>
+        <p class="mb-0 text-secondary" style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;">Furniture</p>
+        <p class="fw-semibold mb-1" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;">Monolith Lounge Chair</p>
+        <p class="mb-1" style="color:#c9a84c;font-size:11px;">★★★★★</p>
+        <p class="fw-semibold mb-0">$1,240</p>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col" style="min-width:170px;max-width:220px;">
+        <div class="overflow-hidden rounded-1 zoom-img mb-2" style="aspect-ratio:1;">
+          <img src="https://picsum.photos/seed/plates2/300/300"
+               alt="Basalt Dining Set"
+               class="w-100 h-100 object-fit-cover" />
+        </div>
+        <p class="mb-0 text-secondary" style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;">Ceramics</p>
+        <p class="fw-semibold mb-1" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;">Basalt Dining Set</p>
+        <p class="mb-1" style="color:#c9a84c;font-size:11px;">★★★★★</p>
+        <p class="fw-semibold mb-0">$380</p>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col" style="min-width:170px;max-width:220px;">
+        <div class="overflow-hidden rounded-1 zoom-img mb-2" style="aspect-ratio:1;">
+          <img src="https://picsum.photos/seed/floorlamp3/300/300"
+               alt="Aura Floor Lamp"
+               class="w-100 h-100 object-fit-cover" />
+        </div>
+        <p class="mb-0 text-secondary" style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;">Luminaires</p>
+        <p class="fw-semibold mb-1" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;">Aura Floor Lamp</p>
+        <p class="mb-1" style="color:#c9a84c;font-size:11px;">★★★★★</p>
+        <p class="fw-semibold mb-0">$690</p>
+      </div>
+
+      <!-- Product 4 – Limited -->
+      <div class="col" style="min-width:170px;max-width:220px;">
+        <div class="overflow-hidden rounded-1 zoom-img mb-2 position-relative" style="aspect-ratio:1;">
+          <img src="https://picsum.photos/seed/woolrug4/300/300"
+               alt="Terra Wool Rug"
+               class="w-100 h-100 object-fit-cover" />
+          <!-- Limited badge -->
+          <span class="position-absolute top-0 end-0 m-2 badge bg-danger"
+                style="font-size:9px;letter-spacing:.06em;border-radius:2px;">Limited</span>
+        </div>
+        <p class="mb-0 text-secondary" style="font-size:9px;letter-spacing:.12em;text-transform:uppercase;">Textiles</p>
+        <p class="fw-semibold mb-1" style="font-family:'Cormorant Garamond',serif;font-size:1.05rem;">Terra Wool Rug</p>
+        <p class="mb-1" style="color:#c9a84c;font-size:11px;">★★★★★</p>
+        <p class="fw-semibold mb-0">$1,105</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     COLLECTION SPOTLIGHT
+     Text left, images right
+     ═══════════════════════════════════════ -->
+<section class="py-5">
+  <div class="container-fluid px-3 px-md-4">
+    <div class="row g-4 g-lg-5 align-items-center">
+
+      <!-- LEFT: text -->
+      <div class="col-12 col-md-5">
+        <p class="text-secondary mb-2" style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;">Collection 04</p>
+        <h2 class="fw-bold mb-3" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,6vw,3.5rem);line-height:1;">
+          The Concrete<br>Geometry.
+        </h2>
+        <p class="text-secondary mb-4" style="font-size:13px;line-height:1.8;">
+          Our latest series explores the intersection of raw industrial materials
+          and organic living. Designed in collaboration with the Berlin Architectural
+          Studio, each piece is a study in weight and balance.
+        </p>
+
+        <!-- Numbered list -->
+        <div class="d-flex gap-3 mb-3">
+          <span class="fw-bold fs-4" style="font-family:'Cormorant Garamond',serif;color:#1a2744;">01</span>
+          <div>
+            <p class="fw-semibold mb-0" style="font-size:.875rem;">Sustainably Sourced</p>
+            <p class="text-secondary mb-0" style="font-size:12px;">Materials with a documented lineage of care.</p>
+          </div>
+        </div>
+        <div class="d-flex gap-3 mb-4">
+          <span class="fw-bold fs-4" style="font-family:'Cormorant Garamond',serif;color:#1a2744;">02</span>
+          <div>
+            <p class="fw-semibold mb-0" style="font-size:.875rem;">Architectural Precision</p>
+            <p class="text-secondary mb-0" style="font-size:12px;">Built with a lifetime of structural integrity.</p>
+          </div>
+        </div>
+
+        <a href="#" class="btn btn-dark rounded-0 px-4"
+           style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">
+          Shop Collection
+        </a>
+      </div>
+
+      <!-- RIGHT: image mosaic -->
+      <div class="col-12 col-md-7">
+        <div class="row g-3">
+
+          <!-- Main image with quote card -->
+          <div class="col-7">
+            <div class="position-relative">
+              <img src="https://picsum.photos/seed/concrete5/500/400"
+                   alt="Concrete collection"
+                   class="img-fluid rounded-1 w-100"
+                   style="height:300px;object-fit:cover;" />
+              <!-- White quote card overlapping the image -->
+              <div class="bg-white p-3 shadow-sm rounded-1"
+                   style="position:absolute;bottom:16px;left:-16px;right:12px;z-index:2;">
+                <p class="fst-italic mb-1" style="font-family:'Cormorant Garamond',serif;font-size:.95rem;line-height:1.6;">
+                  "Better pieces don't just fill a space; they define the world around them."
+                </p>
+                <p class="text-secondary mb-0" style="font-size:10px;letter-spacing:.1em;text-transform:uppercase;">
+                  — Marcus Eling, Architect
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Two smaller images stacked -->
+          <div class="col-5 d-flex flex-column gap-3">
+            <img src="https://picsum.photos/seed/shelf6/300/250"
+                 alt="Shelf"
+                 class="img-fluid rounded-1 w-100 flex-grow-1"
+                 style="height:140px;object-fit:cover;" />
+            <img src="https://picsum.photos/seed/clock7/300/250"
+                 alt="Clock"
+                 class="img-fluid rounded-1 w-100 flex-grow-1"
+                 style="height:140px;object-fit:cover;" />
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     NEWSLETTER
+     Dark navy background, centered text
+     ═══════════════════════════════════════ -->
+<section class="py-5 text-center" style="background:#1a2744;">
+  <div class="container">
+    <h2 class="fw-bold text-white mb-3"
+        style="font-family:'Cormorant Garamond',serif;font-size:clamp(1.6rem,5vw,2.6rem);letter-spacing:.06em;text-transform:uppercase;">
+      The Weekly Atelier
+    </h2>
+    <p class="mb-4 mx-auto" style="color:rgba(255,255,255,.65);font-size:13px;line-height:1.7;max-width:400px;">
+      Join 25,000 architectural enthusiasts for weekly curations on design, philosophy, and the art of living.
+    </p>
+
+    <!-- Input + button -->
+    <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+      <input type="email"
+             class="form-control rounded-0 border-0 px-3"
+             style="flex:1 1 220px;max-width:280px;background:rgba(255,255,255,.1);color:#fff;font-size:13px;"
+             placeholder="Your architectural inquiry…" />
+      <button class="btn btn-light rounded-0 px-4 fw-semibold"
+              style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;">
+        Subscribe
+      </button>
+    </div>
+    <p style="font-size:10px;color:rgba(255,255,255,.3);letter-spacing:.04em;text-transform:uppercase;">
+      Unsubscribe at your own pace. Privacy is a luxury.
+    </p>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════
+     FOOTER
+     4 columns on desktop, 2 on mobile
+     ═══════════════════════════════════════ -->
+<footer class="py-5" style="background:#f7f4ef;border-top:1px solid #e2dbd0;">
+  <div class="container-fluid px-3 px-md-4">
+    <div class="row g-4">
+
+      <!-- Brand -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <p class="fw-bold fs-4 mb-2" style="font-family:'Cormorant Garamond',serif;letter-spacing:.1em;">Atelier</p>
+        <p class="text-secondary" style="font-size:12px;line-height:1.8;max-width:200px;">
+          A curated collection of architectural objects for the considered interior.
+        </p>
+      </div>
+
+      <!-- Discover -->
+      <div class="col-6 col-lg-2">
+        <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Discover</p>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">New Arrivals</a>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Collections</a>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Archive</a>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Journal</a>
+      </div>
+
+      <!-- Client Care -->
+      <div class="col-6 col-lg-2">
+        <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Client Care</p>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Shipping &amp; Returns</a>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Trade Program</a>
+        <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Contact</a>
+      </div>
+
+      <!-- Social -->
+      <div class="col-12 col-sm-6 col-lg-2 offset-lg-3">
+        <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Social</p>
+        <div class="d-flex gap-2">
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+             style="width:32px;height:32px;" aria-label="Instagram">
+            <i class="bi bi-instagram" style="font-size:13px;"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+             style="width:32px;height:32px;" aria-label="Pinterest">
+            <i class="bi bi-pinterest" style="font-size:13px;"></i>
+          </a>
+          <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+             style="width:32px;height:32px;" aria-label="Twitter / X">
+            <i class="bi bi-twitter-x" style="font-size:13px;"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright bar -->
+  <div class="text-center mt-4 pt-3" style="border-top:1px solid #e2dbd0;font-size:10px;color:#c9b99a;letter-spacing:.04em;text-transform:uppercase;">
+    © 2024 Atelier Architectural Artisans. All rights reserved.
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS (needed for hamburger collapse) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

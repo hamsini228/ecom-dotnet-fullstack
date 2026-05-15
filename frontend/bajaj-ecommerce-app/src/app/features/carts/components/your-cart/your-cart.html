@@ -1,0 +1,64 @@
+<div class="cart-wrapper">
+  @if ((cartItems$ | async) ?? []; as details) {
+    @if (details.length === 0) {
+      <div class="empty-cart">
+        <p>🛒 Your cart is empty!</p>
+        <a routerLink="/products">Continue Shopping</a>
+      </div>
+    } @else {
+      <div class="cart-layout">
+        <div class="cart-panel">
+          <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <span>Total Items: {{ details.length }}</span>
+          </div>
+
+          @for (detail of details; track detail.cartItem.cartItemId) {
+            <div class="cart-item">
+              <img [src]="detail.product.picture" [alt]="detail.product.productName" />
+              <div class="item-info">
+                <h4>{{ detail.product.productName }}</h4>
+                <p>{{ detail.product.shoeType }}</p>
+                <div class="quantity-controls">
+                  <button (click)="detail.cartItem.quantity > 1 && (detail.cartItem.quantity = detail.cartItem.quantity - 1); updateQuantity(detail)">−</button>
+                  <span>{{ detail.cartItem.quantity }}</span>
+                  <button (click)="detail.cartItem.quantity = detail.cartItem.quantity + 1; updateQuantity(detail)">+</button>
+                </div>
+              </div>
+              <div class="item-price">
+                <span class="discounted">
+                  ₹{{ detail.product.unitPrice - (detail.product.unitPrice * detail.product.discount / 100) }}
+                </span>
+                <span class="original">₹{{ detail.product.unitPrice }}</span>
+                <span class="discount-badge">{{ detail.product.discount }}% OFF</span>
+                <button class="remove-btn" (click)="removeItem(detail.cartItem.cartItemId, details)">Remove</button>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="order-summary">
+          <h3>Order Summary</h3>
+          <div class="summary-row">
+            <span>Items</span>
+            <span>{{ details.length }}</span>
+          </div>
+          <div class="summary-row">
+            <span>Total</span>
+            <span>₹{{ grandTotal(details) }}</span>
+          </div>
+          <hr />
+          <div class="summary-row grand">
+            <strong>Grand Total</strong>
+            <strong>₹{{ grandTotal(details) }}</strong>
+          </div>
+          <button class="checkout-btn" (click)="onCheckout()">Proceed to Checkout</button>
+        </div>
+      </div>
+    }
+  } @else {
+    <div class="empty-cart">
+      <p>Loading your cart...</p>
+    </div>
+  }
+</div>

@@ -1,0 +1,306 @@
+﻿@* @model IEnumerable<ProductDto>
+
+@{
+    ViewData["Title"] = "Products";
+}
+
+<h2 class="text-center mt-4">Welcome To eCommerce Products List</h2>
+<hr/>
+<h4 align="Center">this are the list of follwing products</h4>
+
+<div class="container mt-4">
+    <div class="row">
+
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="product-card">
+
+                    <!-- Image -->
+                    <div class="img-container">
+                        <img src="~/@product.Picture" class="product-img" />
+                    </div>
+
+                    <!-- Content -->
+                    <div class="product-body">
+                        <h5 class="product-title">@product.ProductName</h5>
+                        <p class="product-desc">@product.Description</p>
+
+                        <div class="product-actions">
+                            <a class="btn btn-outline-success btn-sm"
+                               asp-area="Products"
+                               asp-controller="Home"
+                               asp-action="Details"
+                               asp-route-id="@product.ProductId">
+                                View
+                            </a>
+
+                            <a class="btn btn-dark btn-sm"
+                               asp-area="Carts"
+                               asp-controller="Home"
+                               asp-action="AddToCart"
+                               asp-route-productId="@product.ProductId">
+                                Add
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+<div class="d-flex justify-content-center mt-4">
+    <ul class="pagination">
+
+        <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link" asp-route-page="@(ViewBag.CurrentPage - 1)">Previous</a>
+        </li>
+
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link" asp-route-page="@i">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "disabled" : "")">
+            <a class="page-link" asp-route-page="@(ViewBag.CurrentPage + 1)">Next</a>
+        </li>
+
+    </ul>
+</div> *@
+
+
+@* @model IEnumerable<ProductDto>
+@{
+    ViewData["Title"] = "Products";
+    string currentSort = ViewBag.CurrentSort ?? "name_asc";
+}
+
+<h2 class="text-center mt-4">Welcome To eCommerce Products List</h2>
+<hr/>
+<h4 class="text-center">These are the list of following products</h4>
+
+<div class="container mt-4">
+
+    
+    <div class="d-flex justify-content-end mb-3">
+        <label class="me-2 mt-1 fw-semibold">Sort By:</label>
+        <select class="form-select w-auto" onchange="applySort(this.value)">
+            <option value="name_asc" selected="@(currentSort == "name_asc")">Name (A → Z)</option>
+            <option value="name_desc" selected="@(currentSort == "name_desc")">Name (Z → A)</option>
+            <option value="price_asc" selected="@(currentSort == "price_asc")">Price (Low → High)</option>
+            <option value="price_desc" selected="@(currentSort == "price_desc")">Price (High → Low)</option>
+        </select>
+    </div>
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="product-card">
+                    
+                    <div class="img-container">
+                        <img src="~/@product.Picture" class="product-img" />
+                    </div>
+                  
+                    <div class="product-body">
+                        <h5 class="product-title">@product.ProductName</h5>
+                        <p class="product-desc">@product.Description</p>
+                        <p>Price:@product.UnitPrice</p>
+                        <p>Discount:@product.Discount %</p>
+                        <div class="product-actions">
+                            <a class="btn btn-outline-success btn-sm"
+                               asp-area="Products"
+                               asp-controller="Home"
+                               asp-action="Details"
+                               asp-route-id="@product.ProductId">
+                                View
+                            </a>
+                            <a class="btn btn-dark btn-sm"
+                               asp-area="Carts"
+                               asp-controller="Home"
+                               asp-action="AddToCart"
+                               asp-route-productId="@product.ProductId">
+                                Add
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+{{!-- Pagination --}}
+<div class="d-flex justify-content-center mt-4">
+    <ul class="pagination">
+        <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link"
+               asp-route-page="@(ViewBag.CurrentPage - 1)"
+               asp-route-sort="@currentSort">
+                Previous
+            </a>
+        </li>
+
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link"
+                   asp-route-page="@i"
+                   asp-route-sort="@currentSort">
+                    @i
+                </a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "disabled" : "")">
+            <a class="page-link"
+               asp-route-page="@(ViewBag.CurrentPage + 1)"
+               asp-route-sort="@currentSort">
+                Next
+            </a>
+        </li>
+    </ul>
+</div>
+
+@section Scripts {
+    <script>
+        function applySort(sortValue) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('sort', sortValue);
+            url.searchParams.set('page', '1'); // reset to page 1 on sort change
+            window.location.href = url.toString();
+        }
+    </script>
+} *@
+
+@model IEnumerable<ProductDto>
+@{
+    ViewData["Title"] = "Products";
+    string currentSort = ViewBag.CurrentSort ?? "name_asc";
+    string currentSearch = ViewBag.CurrentSearch ?? "";
+}
+
+<h2 class="text-center mt-4">Welcome To eCommerce Products List</h2>
+<hr/>
+<h4 class="text-center">These are the list of following products</h4>
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+
+   
+        <form method="get" class="d-flex gap-2" style="flex: 1; max-width: 400px;">
+            <input type="hidden" name="sort" value="@currentSort" />
+            <input type="hidden" name="page" value="1" />
+            <input type="text"
+                   name="search"
+                   value="@currentSearch"
+                   class="form-control"
+                   placeholder="Search products..." />
+            <button type="submit" class="btn btn-primary">Search</button>
+            @if (!string.IsNullOrEmpty(currentSearch))
+            {
+                <a class="btn btn-outline-secondary"
+                   asp-route-sort="@currentSort"
+                   asp-route-page="1">Clear</a>
+            }
+        </form>
+
+
+        <div class="d-flex align-items-center gap-2">
+            <label class="fw-semibold mb-0">Sort By:</label>
+            <select class="form-select w-auto" onchange="applySort(this.value)">
+                <option value="name_asc" selected="@(currentSort == "name_asc")">Name (A → Z)</option>
+                <option value="name_desc" selected="@(currentSort == "name_desc")">Name (Z → A)</option>
+                <option value="price_asc" selected="@(currentSort == "price_asc")">Price (Low → High)</option>
+                <option value="price_desc" selected="@(currentSort == "price_desc")">Price (High → Low)</option>
+            </select>
+        </div>
+    </div>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            No products found@(!string.IsNullOrEmpty(currentSearch) ? $" for \"{currentSearch}\"" : "").
+        </div>
+    }
+
+    <div class="row">
+        @foreach (var product in Model)
+        {
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                <div class="product-card">
+                    <div class="img-container">
+                        <img src="~/@product.Picture" class="product-img" />
+                    </div>
+                    <div class="product-body">
+                        <h5 class="product-title">@product.ProductName</h5>
+                        <p class="product-desc">@product.Description</p>
+                        <p>Price: @product.UnitPrice</p>
+                        <p>Discount: @product.Discount %</p>
+                        <div class="product-actions">
+                            <a class="btn btn-outline-success btn-sm"
+                               asp-area="Products"
+                               asp-controller="Home"
+                               asp-action="Details"
+                               asp-route-id="@product.ProductId">
+                                View
+                            </a>
+                            <a class="btn btn-dark btn-sm"
+                               asp-area="Carts"
+                               asp-controller="Home"
+                               asp-action="AddToCart"
+                               asp-route-productId="@product.ProductId">
+                                Add
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+{{!-- Pagination --}}
+<div class="d-flex justify-content-center mt-4">
+    <ul class="pagination">
+        <li class="page-item @(ViewBag.CurrentPage == 1 ? "disabled" : "")">
+            <a class="page-link"
+               asp-route-page="@(ViewBag.CurrentPage - 1)"
+               asp-route-sort="@currentSort"
+               asp-route-search="@currentSearch">Previous</a>
+        </li>
+
+        @for (int i = 1; i <= ViewBag.TotalPages; i++)
+        {
+            <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                <a class="page-link"
+                   asp-route-page="@i"
+                   asp-route-sort="@currentSort"
+                   asp-route-search="@currentSearch">@i</a>
+            </li>
+        }
+
+        <li class="page-item @(ViewBag.CurrentPage == ViewBag.TotalPages ? "disabled" : "")">
+            <a class="page-link"
+               asp-route-page="@(ViewBag.CurrentPage + 1)"
+               asp-route-sort="@currentSort"
+               asp-route-search="@currentSearch">Next</a>
+        </li>
+    </ul>
+</div>
+
+@section Scripts {
+    <script>
+        function applySort(sortValue) {
+            const url = new URL(window.location.href);
+            url.searchParams.set('sort', sortValue);
+            url.searchParams.set('page', '1');
+            window.location.href = url.toString();
+        }
+    </script>
+}

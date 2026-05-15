@@ -1,0 +1,45 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@model IEnumerable<CategoryDto>
+
+@{
+    ViewData["Title"]="Categories Home";
+}
+<h1>Welcome to Category List</h1>
+<table class="table table-hover table-stripped">
+    <thead>
+        <tr>
+            <th>Catgeory Name</th>
+            <th>Catgeory Description</th>
+            <th>Show Products</th>
+            @if(SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+            {
+                <th>Remove Category</th>
+            }
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var catgeory in Model)
+        {
+            <tr>
+                <td>@catgeory.CategoryName</td>
+                <td>@catgeory.Description</td>
+                <td>
+                    <a class="btn btn-success btn-sm" asp-area="Products" asp-controller="Home"
+                       asp-action="CategoryProducts" asp-route-cateogeryid="@catgeory.CategoryId">Show Details</a>
+                </td>
+                @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                {
+                    <td>
+                        <a class="btn btn-danger" asp-area="Caterogies" asp-controller="Home"
+                           asp-action="Delete" asp-route-categoryId="@catgeory.CategoryId">Remove Category</a>
+                    </td>
+                }
+                
+                
+            </tr>
+        }
+    </tbody>
+</table>

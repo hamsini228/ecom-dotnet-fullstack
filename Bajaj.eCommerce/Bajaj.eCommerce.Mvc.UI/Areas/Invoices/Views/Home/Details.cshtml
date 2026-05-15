@@ -1,0 +1,288 @@
+﻿@model InvoiceVM
+@{
+    ViewData["Title"] = "Invoice";
+}
+
+<style>
+    .invoice-wrapper {
+        background: #f4f6f9;
+        min-height: 100vh;
+        padding: 40px 0;
+    }
+
+    .invoice-card {
+        background: #fff;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+        max-width: 750px;
+        margin: auto;
+    }
+
+    .invoice-header {
+        background: #0f0f1a;
+        padding: 40px 40px 32px;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .invoice-header::before {
+            content: 'INVOICE';
+            position: absolute;
+            right: -10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 100px;
+            font-weight: 900;
+            color: rgba(255,255,255,0.03);
+            letter-spacing: -5px;
+            pointer-events: none;
+        }
+
+    .invoice-body {
+        padding: 36px 40px;
+    }
+
+    .section-label {
+        font-size: 10px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #999;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+        .section-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: #f0f0f0;
+        }
+
+    .info-row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        border-bottom: 1px solid #f5f5f5;
+        font-size: 13px;
+    }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+    .invoice-table thead tr {
+        background: #f8f8f8;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #aaa;
+    }
+
+    .invoice-table tbody tr {
+        border-bottom: 1px solid #f5f5f5;
+        font-size: 13px;
+    }
+
+        .invoice-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
+    .paid-badge {
+        display: inline-block;
+        border: 2px solid #22c55e;
+        color: #22c55e;
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 3px;
+        padding: 3px 12px;
+        border-radius: 4px;
+        transform: rotate(-2deg);
+        text-transform: uppercase;
+    }
+
+    @@media print {
+        .no-print {
+            display: none !important;
+        }
+
+        .invoice-wrapper {
+            background: #fff;
+            padding: 0;
+        }
+
+        .invoice-card {
+            box-shadow: none;
+            border-radius: 0;
+        }
+    }
+</style>
+
+<div class="invoice-wrapper">
+    <div class="invoice-card">
+
+        <!-- Header -->
+        <div class="invoice-header">
+            <div class="d-flex justify-content-between align-items-start">
+                <div>
+                    <div style="font-size:11px;letter-spacing:4px;color:#3b82f6;
+                                text-transform:uppercase;margin-bottom:6px;">
+                        Official Receipt
+                    </div>
+                    <div style="font-size:36px;font-weight:800;color:#fff;
+                                letter-spacing:-1px;line-height:1;">
+                        Invoice
+                    </div>
+                    <div style="color:rgba(255,255,255,0.35);font-size:12px;margin-top:6px;">
+                        @Model.InvoiceDate.ToString("dd MMMM yyyy · hh:mm tt")
+                    </div>
+                </div>
+                <div class="text-end">
+                    <div style="font-size:13px;color:rgba(255,255,255,0.4);margin-bottom:4px;">
+                        Invoice No.
+                    </div>
+                    <div style="font-size:28px;font-weight:800;color:#3b82f6;letter-spacing:-1px;">
+                        #@Model.InvoiceId.ToString("D6")
+                    </div>
+                    <div class="mt-3">
+                        <span class="paid-badge">✓ Paid</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Body -->
+        <div class="invoice-body">
+
+            <!-- Payment Info -->
+            <div class="section-label">
+                <i class="bi bi-credit-card"></i> Payment Info
+            </div>
+            <div class="mb-4">
+                <div class="info-row">
+                    <span style="color:#888;">Payment ID</span>
+                    <span style="font-family:monospace;font-size:11px;
+                                 font-weight:600;color:#1a1a2e;">
+                        @Model.PaymentId
+                    </span>
+                </div>
+                <div class="info-row">
+                    <span style="color:#888;">Order ID</span>
+                    <span style="font-family:monospace;font-size:11px;
+                                 font-weight:600;color:#1a1a2e;">
+                        @Model.OrderId
+                    </span>
+                </div>
+                <div class="info-row">
+                    <span style="color:#888;">Payment Method</span>
+                    <span style="font-weight:600;">Razorpay</span>
+                </div>
+            </div>
+
+            <!-- Order Items -->
+            <div class="section-label">
+                <i class="bi bi-box-seam"></i> Order Items
+            </div>
+            <table class="table invoice-table mb-4">
+                <thead>
+                    <tr>
+                        <th class="py-3 ps-0">Product</th>
+                        <th class="text-center py-3">Qty</th>
+                        <th class="text-end py-3">MRP</th>
+                        <th class="text-end py-3">Disc</th>
+                        <th class="text-end py-3 pe-0">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.Items)
+                    {
+                        <tr>
+                            <td class="py-3 ps-0">
+                                <div class="fw-semibold" style="color:#1a1a2e;">
+                                    @item.ProductName
+                                </div>
+                                <small style="color:#aaa;">@item.CategoryName</small>
+                            </td>
+                            <td class="text-center align-middle py-3">
+                                <span style="background:#f4f6f9;padding:3px 10px;
+                                                 border-radius:20px;font-size:12px;font-weight:600;">
+                                    @item.Quantity
+                                </span>
+                            </td>
+                            <td class="text-end align-middle py-3"
+                                style="color:#bbb;text-decoration:line-through;font-size:12px;">
+                                ₹@((item.Price * item.Quantity).ToString("0.##"))
+                            </td>
+                            <td class="text-end align-middle py-3">
+                                @if (item.Discount > 0)
+                                {
+                                    <span style="background:#f0fdf4;color:#16a34a;
+                                                         font-size:10px;font-weight:700;
+                                                         padding:3px 8px;border-radius:20px;">
+                                        @item.Discount% OFF
+                                    </span>
+                                }
+                                else
+                                {
+                                    <span style="color:#ddd;">—</span>
+                                }
+                            </td>
+                            <td class="text-end align-middle py-3 pe-0 fw-bold"
+                                style="color:#3b82f6">
+                                ₹@item.TotalPrice.ToString("0.##")
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+
+            <!-- Totals -->
+            <div style="background:#f8f8f8;border-radius:14px;padding:20px 24px;
+                        margin-bottom:32px;">
+                <div class="info-row" style="border-color:#efefef;">
+                    <span style="color:#888;font-size:13px;">Original Total</span>
+                    <span style="font-size:13px;">₹@Model.OriginalTotal.ToString("0.##")</span>
+                </div>
+                @if (Model.Savings > 0)
+                {
+                    <div class="info-row" style="border-color:#efefef;">
+                        <span style="color:#16a34a;font-size:13px;">You Saved</span>
+                        <span style="color:#16a34a;font-size:13px;font-weight:600;">
+                            − ₹@Model.Savings.ToString("0.##")
+                        </span>
+                    </div>
+                }
+                <div class="info-row" style="border-color:#efefef;">
+                    <span style="color:#888;font-size:13px;">Shipping</span>
+                    <span style="color:#16a34a;font-size:13px;font-weight:600;">Free</span>
+                </div>
+                <div style="border-top:2px dashed #e0e0e0;margin-top:12px;padding-top:14px;
+                            display:flex;justify-content:space-between;align-items:center;">
+                    <span style="font-weight:700;font-size:14px;">Amount Paid</span>
+                    <span style="font-size:26px;font-weight:800;color:#0f0f1a;letter-spacing:-1px;">
+                        ₹@Model.DiscountedTotal.ToString("0.##")
+                    </span>
+                </div>
+            </div>
+
+            <!-- Actions -->
+            <div class="d-flex gap-3 no-print">
+                <a asp-area="Products" asp-controller="Home" asp-action="Index"
+                   class="btn flex-grow-1 py-3 fw-semibold"
+                   style="background:#0f0f1a;color:#fff;border-radius:12px;font-size:14px;">
+                    <i class="bi bi-shop me-2"></i> Continue Shopping
+                </a>
+                <button onclick="window.print()"
+                        class="btn py-3 px-4 fw-semibold"
+                        style="background:#3b82f6;color:#fff;border-radius:12px;
+                               border:none;font-size:14px;">
+                    <i class="bi bi-printer me-1"></i> Print
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>

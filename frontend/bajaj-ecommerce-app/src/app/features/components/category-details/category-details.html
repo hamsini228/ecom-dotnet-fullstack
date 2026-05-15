@@ -1,0 +1,9 @@
+@if (categoryId > 0) {
+  @if (category$ | async; as category) {
+    <h3>{{ title }} {{ category.categoryName }}</h3>
+  } @else {
+    <p>Searching for records...</p>
+  }
+} @else {
+  <p>Please select a category to view details.</p>
+}

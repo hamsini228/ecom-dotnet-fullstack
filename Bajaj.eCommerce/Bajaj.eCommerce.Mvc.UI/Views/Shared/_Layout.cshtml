@@ -1,0 +1,148 @@
+﻿@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Bajaj.eCommerce.Mvc.UI</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Bajaj.eCommerce.Mvc.UI.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom">
+            <div class="container">
+                <a class="navbar-brand fw-bold">ATELIER</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Products" asp-controller="Home" asp-action="Index">
+                                Products
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Categories" asp-controller="Home" asp-action="Index">
+                                Categories
+                            </a>
+                        </li>
+                        @if (SignInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="Categories" asp-controller="Home" asp-action="Create">
+                                    Register Category
+                                </a>
+                            </li>
+                        }
+                        
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="Carts" asp-controller="Home" asp-action="YourCart">
+                                Cart
+                            </a>
+                        </li>
+                        
+                    </ul>
+
+                    @* <div class="d-flex align-items-center gap-3">
+                        <input type="text" class="form-control search" placeholder="Curated Search...">
+                        <span>👤Profile</span>
+
+                        @* <div class="position-relative">
+                            <span>🛒</span>
+                            <span class="cart-badge">3</span>
+                        </div> *@
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item">
+                                <partial name="_LoginPartial.cshtml" />
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+   
+    <footer class="py-5" style="background:#f7f4ef;border-top:1px solid #e2dbd0;">
+        <div class="container-fluid px-3 px-md-4">
+            <div class="row g-4">
+
+                <!-- Brand -->
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <p class="fw-bold fs-4 mb-2" style="font-family:'Cormorant Garamond',serif;letter-spacing:.1em;">Atelier</p>
+                    <p class="text-secondary" style="font-size:12px;line-height:1.8;max-width:200px;">
+                        Amazing designs and new models
+                    </p>
+                </div>
+
+                <!-- Discover -->
+                <div class="col-6 col-lg-2">
+                    <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Discover</p>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">New Arrivals</a>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Collections</a>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Archive</a>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Journal</a>
+                </div>
+
+                <!-- Client Care -->
+                <div class="col-6 col-lg-2">
+                    <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Client Care</p>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Shipping &amp; Returns</a>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Trade Program</a>
+                    <a href="#" class="d-block text-secondary mb-2" style="font-size:12px;">Contact</a>
+                </div>
+
+                <!-- Social -->
+                @* <div class="col-12 col-sm-6 col-lg-2 offset-lg-3">
+                    <p class="fw-bold mb-3" style="font-size:10px;letter-spacing:.15em;text-transform:uppercase;">Social</p>
+                    <div class="d-flex gap-2">
+                        <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                           style="width:32px;height:32px;" aria-label="Instagram">
+                            <i class="bi bi-instagram" style="font-size:13px;"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                           style="width:32px;height:32px;" aria-label="Pinterest">
+                            <i class="bi bi-pinterest" style="font-size:13px;"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline-secondary rounded-circle p-0 d-flex align-items-center justify-content-center"
+                           style="width:32px;height:32px;" aria-label="Twitter / X">
+                            <i class="bi bi-twitter-x" style="font-size:13px;"></i>
+                        </a>
+                    </div>
+                </div> *@
+
+            </div>
+        </div>
+
+        <!-- Copyright bar -->
+        <div class="text-center mt-4 pt-3" style="border-top:1px solid #e2dbd0;font-size:10px;color:#c9b99a;letter-spacing:.04em;text-transform:uppercase;">
+            © 2024 Atelier . All rights reserved.
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

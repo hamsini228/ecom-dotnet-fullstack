@@ -1,0 +1,72 @@
+<section class="vh-100">
+  <div class="container-fluid h-custom">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <h1 class="text-center">{{ title }}</h1>
+      <hr />
+      <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <form (ngSubmit)="onCredentialSubmit()" #loginForm="ngForm">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <label class="form-label" for="form3Example3">Email address</label>
+            <input
+              type="email"
+              id="form3Example3"
+              class="form-control form-control-lg"
+              required 
+              [(ngModel)]="user.email"
+              placeholder="Enter a valid email address"
+              name="email" #email="ngModel"/>
+              @if(email.invalid && (email.dirty || email.touched)){
+                <div class="alert alert-danger">
+                    should be in proper email format
+                </div>
+              }
+              @if(email.errors?.['required']){
+                <div class="alert alert-danger">
+                    Email is arequired field
+                </div>
+              }
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-3">
+            <label class="form-label" for="form3Example4">Password</label>
+            <input
+              type="password"
+              id="form3Example4"
+              class="form-control form-control-lg"
+              required minlength="4"
+              placeholder="Enter password"
+              [(ngModel)]="user.password"
+              name="password" #password="ngModel"/>
+             @if(password.invalid && (password.dirty || password.touched)){
+                <div class="alert alert-danger">
+                    password should be of minimum 4 characters
+                </div>
+              }
+              @if(password.errors?.['required']){
+                <div class="alert alert-danger">
+                    Password is arequired field
+                </div>
+              }
+          </div>
+
+          <div class="text-center text-lg-start mt-4 pt-2">
+            <button
+              type="submit"
+              class="btn btn-primary btn-lg"
+              style="padding-left: 2.5rem; padding-right: 2.5rem"
+              [disabled]="!loginForm.valid">
+              Login
+            </button>
+          </div>
+        </form>
+        </div>
+    @if(authErrorMessage()){
+        <div class="alert alert-danger">
+            {{authErrorMessage()}}
+        </div>
+    }
+    </div>
+  </div>
+</section>

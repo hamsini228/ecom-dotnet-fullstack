@@ -1,0 +1,12 @@
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.deps.json
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\bin\Debug\net8.0\eCommerce.Domain.pdb
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.AssemblyInfoInputs.cache
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.AssemblyInfo.cs
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.csproj.CoreCompileInputs.cache
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\refint\eCommerce.Domain.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.pdb
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\ref\eCommerce.Domain.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.sourcelink.json

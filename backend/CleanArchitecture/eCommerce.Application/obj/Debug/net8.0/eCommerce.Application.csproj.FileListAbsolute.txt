@@ -1,0 +1,16 @@
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\bin\Debug\net8.0\eCommerce.Application.deps.json
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\bin\Debug\net8.0\eCommerce.Application.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\bin\Debug\net8.0\eCommerce.Application.pdb
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\bin\Debug\net8.0\eCommerce.Domain.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\bin\Debug\net8.0\eCommerce.Domain.pdb
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.csproj.AssemblyReference.cache
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.AssemblyInfoInputs.cache
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.AssemblyInfo.cs
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.csproj.CoreCompileInputs.cache
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerc.FF2FEB98.Up2Date
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\refint\eCommerce.Application.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.pdb
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\ref\eCommerce.Application.dll
+C:\Users\pilli\OneDrive\Desktop\.net&angular training\ASP.NETCoreWebAPI\CleanArchitecture\eCommerce.Application\obj\Debug\net8.0\eCommerce.Application.sourcelink.json

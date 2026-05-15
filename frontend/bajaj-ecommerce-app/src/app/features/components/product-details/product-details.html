@@ -1,0 +1,98 @@
+<div class="container py-5">
+
+    @if(product$ |async; as product){
+
+    <div class="row g-5">
+
+        <!-- Left Side Images -->
+        <div class="col-md-6 d-flex gap-3">
+
+            <!-- Same Thumbnail Images -->
+            <div class="d-flex flex-column gap-2">
+
+                <img [src]="product.picture" class="thumb-img" />
+
+                <img [src]="product.picture" class="thumb-img" />
+
+                <img [src]="product.picture" class="thumb-img" />
+
+            </div>
+
+            <!-- Main Image -->
+            <div class="flex-grow-1">
+                <img id="mainImage" [src]="product.picture" class="img-fluid rounded w-100 main-img" />
+            </div>
+
+        </div>
+
+        <!-- Right Side Product Details -->
+        <div class="col-md-6">
+
+            <!-- Product Name -->
+            <h2 class="fw-bold">{{product.productName}}</h2>
+
+            <!-- Price -->
+            <div class="mb-2">
+
+                <span class="fs-4 fw-bold text-dark">
+                    <span class="discounted">
+                  ₹{{ product.unitPrice - (product.unitPrice * product.discount / 100) }}
+                </span>
+                </span>
+
+                @if(product.discount > 0){
+
+                <span class="text-muted text-decoration-line-through ms-2">
+                    ₹ {{product.unitPrice}}
+                </span>
+
+                <span class="text-success ms-2">
+                    {{product.discount}}% OFF
+                </span>
+
+                }
+
+            </div>
+
+            <!-- Description -->
+            <p class="text-muted">{{product.description}}</p>
+
+            <!-- Product Info -->
+            <p><strong>Type:</strong> {{product.shoeType}}</p>
+            <p><strong>Made In:</strong> {{product.madeIn}}</p>
+
+            <!-- Quantity -->
+            <div class="d-flex align-items-center mb-3">
+
+                <button class="btn btn-outline-secondary">
+                    -
+                </button>
+
+                <input type="text" [value]="1" readonly class="form-control text-center mx-2"
+                    style="width:60px;" />
+
+                <button class="btn btn-outline-secondary">
+                    +
+                </button>
+
+            </div>
+
+            <!-- Add To Cart -->
+            <button class="btn btn-dark w-100 "(click)="onAddToCart(product)">
+                Add to Cart
+            </button>
+
+            <hr />
+
+            <!-- Warranty -->
+            <p><strong>Warranty:</strong> {{product.warrantyPeriod}}</p>
+
+            <!-- Return Policy -->
+            <p><strong>Return Policy:</strong> {{product.returnPolicy}}</p>
+
+        </div>
+
+    </div>
+
+    }
+</div>

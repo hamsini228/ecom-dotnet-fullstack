@@ -1,0 +1,146 @@
+.cat-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.cat-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--slate);
+  margin: 0;
+  letter-spacing: 0.01em;
+}
+
+.cat-table-wrapper {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.cat-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+}
+
+.cat-table thead tr {
+  background: var(--sky-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.cat-table th {
+  padding: 0.85rem 1.25rem;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--sky-dark);
+}
+
+.cat-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.15s ease;
+}
+
+.cat-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.cat-table tbody tr:hover {
+  background: var(--sky-light);
+}
+
+.cat-table td {
+  padding: 1rem 1.25rem;
+  color: var(--text-main);
+  vertical-align: middle;
+}
+
+.cat-id {
+  font-weight: 500;
+  color: var(--text-muted);
+  width: 50px;
+}
+
+.cat-name {
+  font-weight: 500;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.05rem;
+  color: var(--slate);
+}
+
+.cat-desc {
+  color: var(--text-muted);
+  max-width: 400px;
+}
+
+/* Buttons */
+.cat-btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 0.45rem 1rem;
+  transition: opacity 0.15s ease, transform 0.1s ease;
+  letter-spacing: 0.02em;
+}
+
+.cat-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.cat-btn:active {
+  transform: translateY(0);
+}
+
+.cat-btn--create {
+  background: var(--slate);
+  color: #fff;
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+  border-radius: 8px;
+}
+
+.cat-btn--view {
+  background: var(--sky-mid);
+  color: var(--slate);
+}
+
+.cat-btn--delete {
+  background: transparent;
+  border: 1px solid #e57373;
+  color: #c0392b;
+}
+
+.cat-btn--delete:hover {
+  background: #fdecea;
+}
+
+/* Empty & misc */
+.cat-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+}
+
+.cat-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
+}
+
+.cat-loading {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
